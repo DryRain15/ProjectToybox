@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a32f034ba901b3d44b7d5f3aa79b0ecb
+guid: de7cc0a79c0d9ba469ab09b4a382db6c
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -155,15 +155,6 @@ TextureImporter:
   - first:
       213: -3644898159667055547
     second: FloorPreset_50
-  - first:
-      213: -4335294316665272044
-    second: FloorPreset_35
-  - first:
-      213: -7666156142343123047
-    second: FloorPreset_38
-  - first:
-      213: -7423178753478151884
-    second: FloorPreset_40
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -281,11 +272,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 328
+        y: 416
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -306,11 +297,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 328
+        y: 416
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -331,11 +322,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 328
+        y: 416
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -356,11 +347,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 328
+        y: 416
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -381,11 +372,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 296
+        y: 384
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -406,11 +397,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 296
+        y: 384
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -431,11 +422,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 296
+        y: 384
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -456,11 +447,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 296
+        y: 384
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -481,11 +472,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 296
+        y: 384
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -506,11 +497,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 296
+        y: 384
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -531,11 +522,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 416
-        y: 296
+        y: 384
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -556,11 +547,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 264
+        y: 352
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -581,11 +572,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 264
+        y: 352
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -606,11 +597,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 264
+        y: 352
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -630,12 +621,12 @@ TextureImporter:
       name: FloorPreset_16
       rect:
         serializedVersion: 2
-        x: 64
-        y: 232
+        x: 96
+        y: 304
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -655,12 +646,12 @@ TextureImporter:
       name: FloorPreset_17
       rect:
         serializedVersion: 2
-        x: 160
-        y: 232
+        x: 128
+        y: 304
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -681,11 +672,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 232
+        y: 272
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -705,12 +696,12 @@ TextureImporter:
       name: FloorPreset_20
       rect:
         serializedVersion: 2
-        x: 32
-        y: 200
+        x: 64
+        y: 272
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -730,12 +721,12 @@ TextureImporter:
       name: FloorPreset_22
       rect:
         serializedVersion: 2
-        x: 128
-        y: 200
+        x: 256
+        y: 240
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -755,12 +746,12 @@ TextureImporter:
       name: FloorPreset_24
       rect:
         serializedVersion: 2
-        x: 256
-        y: 200
+        x: 352
+        y: 240
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -780,12 +771,12 @@ TextureImporter:
       name: FloorPreset_26
       rect:
         serializedVersion: 2
-        x: 352
-        y: 200
+        x: 32
+        y: 240
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -805,12 +796,12 @@ TextureImporter:
       name: FloorPreset_27
       rect:
         serializedVersion: 2
-        x: 416
-        y: 200
+        x: 96
+        y: 240
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -830,12 +821,12 @@ TextureImporter:
       name: FloorPreset_28
       rect:
         serializedVersion: 2
-        x: 64
-        y: 168
+        x: 128
+        y: 240
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -855,12 +846,12 @@ TextureImporter:
       name: FloorPreset_29
       rect:
         serializedVersion: 2
-        x: 160
-        y: 168
+        x: 192
+        y: 240
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -881,11 +872,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 168
+        y: 208
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -906,11 +897,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 168
+        y: 208
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -931,11 +922,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 104
+        y: 208
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -956,11 +947,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 104
+        y: 208
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -981,11 +972,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 232
+        y: 272
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1005,12 +996,12 @@ TextureImporter:
       name: FloorPreset_21
       rect:
         serializedVersion: 2
-        x: 96
-        y: 200
+        x: 160
+        y: 272
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1030,12 +1021,12 @@ TextureImporter:
       name: FloorPreset_23
       rect:
         serializedVersion: 2
-        x: 192
-        y: 200
+        x: 320
+        y: 240
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1055,12 +1046,12 @@ TextureImporter:
       name: FloorPreset_25
       rect:
         serializedVersion: 2
-        x: 320
-        y: 200
+        x: 416
+        y: 240
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1081,11 +1072,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 104
+        y: 160
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1105,12 +1096,12 @@ TextureImporter:
       name: FloorPreset_36
       rect:
         serializedVersion: 2
-        x: 96
-        y: 72
+        x: 352
+        y: 128
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1130,12 +1121,12 @@ TextureImporter:
       name: FloorPreset_37
       rect:
         serializedVersion: 2
-        x: 128
-        y: 72
+        x: 224
+        y: 128
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1155,12 +1146,12 @@ TextureImporter:
       name: FloorPreset_39
       rect:
         serializedVersion: 2
-        x: 224
-        y: 72
+        x: 288
+        y: 128
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1180,12 +1171,12 @@ TextureImporter:
       name: FloorPreset_41
       rect:
         serializedVersion: 2
-        x: 352
-        y: 72
+        x: 256
+        y: 96
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1205,12 +1196,12 @@ TextureImporter:
       name: FloorPreset_43
       rect:
         serializedVersion: 2
-        x: 416
-        y: 72
+        x: 64
+        y: 160
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1230,12 +1221,12 @@ TextureImporter:
       name: FloorPreset_44
       rect:
         serializedVersion: 2
-        x: 64
-        y: 40
+        x: 160
+        y: 160
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1255,12 +1246,12 @@ TextureImporter:
       name: FloorPreset_45
       rect:
         serializedVersion: 2
-        x: 160
-        y: 40
+        x: 32
+        y: 128
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1280,12 +1271,12 @@ TextureImporter:
       name: FloorPreset_46
       rect:
         serializedVersion: 2
-        x: 256
-        y: 40
+        x: 96
+        y: 128
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1302,15 +1293,115 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: FloorPreset_47
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 0}
+        - {x: -16, y: -8}
+        - {x: 0, y: -16}
+        - {x: 16, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba2f5948e6e9ff50800000000000000
+      internalID: 6915812588141882044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorPreset_48
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 128
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 0}
+        - {x: -16, y: -8}
+        - {x: 0, y: -16}
+        - {x: 16, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc0b2f8a376cb430800000000000000
+      internalID: 3800025686801583351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorPreset_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 0}
+        - {x: -16, y: -8}
+        - {x: 0, y: -16}
+        - {x: 16, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a1bbc295c5d5610800000000000000
+      internalID: 1611545779740809865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorPreset_50
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 0}
+        - {x: -16, y: -8}
+        - {x: 0, y: -16}
+        - {x: 16, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544f19e6f68ba6dc0800000000000000
+      internalID: -3644898159667055547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: FloorPreset_9
       rect:
         serializedVersion: 2
-        x: 320
-        y: 296
+        x: 288
+        y: 352
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1330,12 +1421,12 @@ TextureImporter:
       name: FloorPreset_14
       rect:
         serializedVersion: 2
-        x: 288
-        y: 264
+        x: 320
+        y: 384
         width: 32
-        height: 32
+        height: 48
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.16666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -1347,131 +1438,6 @@ TextureImporter:
       bones: []
       spriteID: 94771d08ebc341b00800000000000000
       internalID: 798329822854084425
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FloorPreset_35
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 72
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 0, y: 0}
-        - {x: -16, y: -8}
-        - {x: 0, y: -16}
-        - {x: 16, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4198562d9c0f5d3c0800000000000000
-      internalID: -4335294316665272044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FloorPreset_38
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 72
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 0, y: 0}
-        - {x: -16, y: -8}
-        - {x: 0, y: -16}
-        - {x: 16, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99f85f60b975c9590800000000000000
-      internalID: -7666156142343123047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FloorPreset_40
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 72
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 0, y: 0}
-        - {x: -16, y: -8}
-        - {x: 0, y: -16}
-        - {x: 16, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43135bed0429bf890800000000000000
-      internalID: -7423178753478151884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FloorPreset_42
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 72
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.75}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 0, y: 0}
-        - {x: -16, y: -8}
-        - {x: 0, y: -16}
-        - {x: 16, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: eebc804140c5f7d40800000000000000
-      internalID: 5584283235548449774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FloorPreset_47
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 72
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: 0, y: 0}
-        - {x: -16, y: -8}
-        - {x: 0, y: -16}
-        - {x: 16, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: cba2f5948e6e9ff50800000000000000
-      internalID: 6915812588141882044
       vertices: []
       indices: 
       edges: []

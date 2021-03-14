@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IMovable, IDamaged
 {
+    private Vector3 _collosionPoint;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -53,8 +56,12 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     {
         var hit = Physics2D.Raycast(Position, 
             Velocity.normalized,
-            Velocity.magnitude * Time.deltaTime, 8);
-        if (hit) return;
+            Mathf.Max(Velocity.magnitude * Time.deltaTime, 0.3f), 1 << 8);
+        if (hit)
+        {
+            _collosionPoint = hit.point;
+            return;
+        }
 
         Position += Velocity * Time.deltaTime;
 
@@ -88,4 +95,12 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     }
 
     #endregion
+
+    private void OnDrawGizmos()
+    {
+        var pos = transform.position;
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(pos, pos + Velocity);
+        Gizmos.DrawSphere(_collosionPoint, 0.1f);
+    }
 }
