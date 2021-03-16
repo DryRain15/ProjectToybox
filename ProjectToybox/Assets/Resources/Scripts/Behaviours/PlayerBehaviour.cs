@@ -168,8 +168,18 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
             var result = new Vector3(-x, y, 0);
             if (Velocity.x == 0 && Velocity.y != 0f) //수직 이동시
                 result *= -1;
-            
+
+            var prevVelocity = Velocity;
             Velocity = result;
+            
+            hit = Physics2D.Raycast(Position, 
+                Velocity.normalized,
+                Mathf.Max(Velocity.magnitude * Time.deltaTime, 0.3f), 1 << 8);
+            if (hit)
+            {
+                Velocity = prevVelocity;
+                return;
+            }
         }
 
         Position += Velocity * Time.deltaTime;
