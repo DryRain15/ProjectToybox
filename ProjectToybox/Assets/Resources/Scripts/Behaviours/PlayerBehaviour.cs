@@ -125,7 +125,14 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         if (hit)
         {
             _collisionPoint = hit.point;
-            return;
+            var normal = hit.normal;
+            var x = normal.x > 0 ? 1 : -1;
+            var y = normal.y > 0 ? 0.5f : -0.5f;
+            var result = new Vector3(-x, y, 0);
+            if (Velocity.x == 0 && Velocity.y != 0f) //수직 이동시
+                result *= -1;
+            
+            Velocity = result;
         }
 
         Position += Velocity * Time.deltaTime;
