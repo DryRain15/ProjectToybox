@@ -9,7 +9,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     private Animator _anim;
     private SpriteRenderer _sr;
     private IInteractableObject _currentItem;
-    private IInteractableObject _currentHold;
+    private IHoldable _currentHold;
     
     // Start is called before the first frame update
     void Start()
@@ -35,25 +35,8 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         MoveTo();
         FaceDirection();
 
-        if (_currentItem != null)
-        {
-            if (_currentItem.InteractState == InteractState.Interactable && GlobalInputController.Instance.useKeyDown)
-            {
-                _currentHold = _currentItem;
-                _currentHold.Interact(this);
-            }
-
-        }
-
-        if (_currentHold != null)
-        {
-            if (_currentHold.InteractState == InteractState.Interacting && GlobalInputController.Instance.cancelKeyDown)
-            {
-                _currentHold.Interact(this);
-                _currentHold = null;
-            }
-        }
-
+        InputCheck();
+        
         if (Direction != Direction.None)
         {
             var up = (Direction.Up & Direction) == Direction.Up;
@@ -68,6 +51,43 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
             _sr.flipX = right;
         }
+    }
+
+    private void InputCheck()
+    {
+        if (GlobalInputController.Instance.useKeyDown)
+        {
+            if (_currentHold != null)
+            {
+                if (_currentHold.HoldState == HoldState.Holding)
+                {
+                    _currentHold.Use();
+                }
+            }
+            else if (_currentItem != null)
+            {
+                if (_currentItem.InteractState == InteractState.Interactable)
+                {
+                    _currentItem.Interact(this);
+                    var holdable = _currentItem.GameObject.GetComponent<IHoldable>();
+                    if (holdable != null)
+                        _currentHold = holdable;
+                }
+            }
+        }
+
+        if (GlobalInputController.Instance.cancelKeyDown)
+        {
+            if (_currentHold != null)
+            {
+                if (_currentHold.HoldState == HoldState.Holding)
+                {
+                    _currentHold.Release();
+                    _currentHold = null;
+                }
+            }
+        }
+
     }
 
     private void FixedUpdate()
@@ -91,10 +111,11 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         for (int i = 0; i < hits.Length; i++)
         {
             var tiio = hits[i].GetComponent<IInteractableObject>();
-            if (tiio != null)
+            if (tiio != null && tiio.InteractState == InteractState.Interactable)
             {
                 var t_dist = Vector3.Distance(hits[i].transform.position, transform.position);
-                if (t_dist < dist && tiio != _currentHold)
+                if (t_dist < dist && 
+                    (_currentHold == null || (_currentHold != null && tiio.GameObject != _currentHold.GameObject)))
                 {
                     dist = t_dist;
                     iio = tiio;
@@ -139,6 +160,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     
     public string Name { get; set; }
     
+    public GameObject GameObject { get => gameObject; }
     public Transform Transform { get => transform;}
     public Vector3 Position
     {
