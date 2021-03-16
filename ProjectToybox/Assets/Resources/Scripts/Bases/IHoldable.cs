@@ -16,7 +16,7 @@ public interface IHoldable
     HoldState HoldState { get; set; }
     ICharacterObject Holder { get; set; }
     
-    void Hold();
+    void Hold(IFieldObject target);
     void Use();
     void Release();
 

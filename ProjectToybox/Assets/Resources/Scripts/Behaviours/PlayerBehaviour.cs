@@ -7,12 +7,15 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 {
     private Vector3 _collisionPoint;
     private Animator _anim;
+    private SpriteRenderer _sr;
     private IInteractableObject _currentItem;
+    private IInteractableObject _currentHold;
     
     // Start is called before the first frame update
     void Start()
     {
         _anim = GetComponentInChildren<Animator>();
+        _sr = GetComponentInChildren<SpriteRenderer>();
         Stats = new Stats()
         {
             Hp = 10f,
@@ -31,23 +34,53 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
             GlobalInputController.Instance.vInput * 0.5f) * Stats.MoveSpeed;
         MoveTo();
         FaceDirection();
+
+        if (_currentItem != null)
+        {
+            if (_currentItem.InteractState == InteractState.Interactable && GlobalInputController.Instance.useKeyDown)
+            {
+                _currentHold = _currentItem;
+                _currentHold.Interact(this);
+            }
+
+        }
+
+        if (_currentHold != null)
+        {
+            if (_currentHold.InteractState == InteractState.Interacting && GlobalInputController.Instance.cancelKeyDown)
+            {
+                _currentHold.Interact(this);
+                _currentHold = null;
+            }
+        }
+
         if (Direction != Direction.None)
         {
-            if ((Direction.Up & Direction) == Direction.Up)
-                _anim.SetBool("IsUp", true);
-            else if ((Direction.Down & Direction) == Direction.Down)
-                _anim.SetBool("IsUp", false);
-            if ((Direction.Left & Direction) == Direction.Left)
-                _anim.SetBool("IsLeft", true);
-            else if ((Direction.Right & Direction) == Direction.Right)
-                _anim.SetBool("IsLeft", false);
+            var up = (Direction.Up & Direction) == Direction.Up;
+            var down = (Direction.Down & Direction) == Direction.Down;
+            var left = (Direction.Left & Direction) == Direction.Left;
+            var right = (Direction.Right & Direction) == Direction.Right;
+                
+            _anim.SetBool("IsUp", up);
+            _anim.SetBool("IsDown", down);
+            _anim.SetBool("IsLeft", left);
+            _anim.SetBool("IsRight", right);
+
+            _sr.flipX = right;
         }
+    }
+
+    private void FixedUpdate()
+    {
+        SetDirection();
     }
 
     void FaceDirection()
     {
-        var face_x = ((Direction.Left & Direction) == Direction.Left) ? -0.25f : 0.25f;
-        var face_y = ((Direction.Up & Direction) == Direction.Up) ? 0.125f : -0.125f;
+        var face_x = ((Direction.Left & Direction) == Direction.Left) ? -0.25f : 
+            ((Direction.Right & Direction) == Direction.Right) ? 0.25f : 0f;
+        var face_y = ((Direction.Up & Direction) == Direction.Up) ? 0.125f : 
+            ((Direction.Down & Direction) == Direction.Down) ? -0.125f : 0f;
         var face_pos = transform.position + new Vector3(face_x, face_y);
         Collider2D[] hits = Physics2D.OverlapBoxAll(face_pos, 
             new Vector2(0.5f, 0.25f), 0, 1 << 9);
@@ -61,7 +94,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
             if (tiio != null)
             {
                 var t_dist = Vector3.Distance(hits[i].transform.position, transform.position);
-                if (t_dist < dist)
+                if (t_dist < dist && tiio != _currentHold)
                 {
                     dist = t_dist;
                     iio = tiio;
@@ -105,6 +138,8 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     #region IFieldObject
     
     public string Name { get; set; }
+    
+    public Transform Transform { get => transform;}
     public Vector3 Position
     {
         get => transform.position;
@@ -119,6 +154,8 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     
     public void MoveTo()
     {
+        if (Velocity.magnitude < Mathf.Epsilon) return;
+        
         var hit = Physics2D.Raycast(Position, 
             Velocity.normalized,
             Mathf.Max(Velocity.magnitude * Time.deltaTime, 0.3f), 1 << 8);
@@ -136,7 +173,17 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         }
 
         Position += Velocity * Time.deltaTime;
+    }
 
+    private void SetDirection()
+    {
+        _anim.ResetTrigger("DirectionOnChange");
+        
+        var prevHDir = (Direction.Left & Direction) | (Direction.Right & Direction);
+        var prevVDir = (Direction.Up & Direction) | (Direction.Down & Direction);
+        
+        Direction = Direction.None;
+        
         if (Velocity.x < 0)
         {
             Direction = Direction.Left;
@@ -145,10 +192,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         {
             Direction = Direction.Right;
         }
-        else
-        {
-            Direction = (Direction.Left & Direction) | (Direction.Right & Direction);
-        }
+        
         if (Velocity.y < 0)
         {
             Direction = Direction | Direction.Down;
@@ -157,6 +201,16 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         {
             Direction = Direction | Direction.Up;
         }
+        
+        if ((prevHDir | prevVDir) != Direction.None && Direction == Direction.None)
+        {
+            Direction = prevHDir | prevVDir;
+            return;
+        }
+        
+        if (prevHDir != ((Direction.Left & Direction) | (Direction.Right & Direction)) ||
+            prevVDir != ((Direction.Up & Direction) | (Direction.Down & Direction)))
+            _anim.SetTrigger("DirectionOnChange");
     }
 
     #endregion
@@ -177,8 +231,10 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         Gizmos.DrawLine(pos, pos + Velocity);
         Gizmos.DrawSphere(_collisionPoint, 0.1f);
         
-        var face_x = ((Direction.Left & Direction) == Direction.Left) ? -0.25f : 0.25f;
-        var face_y = ((Direction.Up & Direction) == Direction.Up) ? 0.125f : -0.125f;
+        var face_x = ((Direction.Left & Direction) == Direction.Left) ? -0.25f : 
+            ((Direction.Right & Direction) == Direction.Right) ? 0.25f : 0f;
+        var face_y = ((Direction.Up & Direction) == Direction.Up) ? 0.125f : 
+            ((Direction.Down & Direction) == Direction.Down) ? -0.125f : 0f;
         var face_pos = pos + new Vector3(face_x, face_y);
         Gizmos.DrawWireCube(face_pos, new Vector2(0.5f, 0.25f));
     }

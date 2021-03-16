@@ -1,0 +1,1835 @@
+fileFormatVersion: 2
+guid: 0a5b24ddb79c89d42bcb826aee07e9d9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4428007689558990534
+    second: 0-0
+  - first:
+      213: 3046590934834786288
+    second: 1-0
+  - first:
+      213: -4884857652332154202
+    second: 2-0
+  - first:
+      213: -2748362051931930247
+    second: 3-0
+  - first:
+      213: -7071407355709804776
+    second: 4-0
+  - first:
+      213: 6873967189165348252
+    second: 5-0
+  - first:
+      213: 8421586688668805665
+    second: 6-0
+  - first:
+      213: 8762561235345680640
+    second: 0-1
+  - first:
+      213: 2275620468573551865
+    second: 1-1
+  - first:
+      213: -1677759028871747024
+    second: 2-1
+  - first:
+      213: -8107483229042595968
+    second: 3-1
+  - first:
+      213: 3093544953027459495
+    second: 4-1
+  - first:
+      213: 2318620021244679812
+    second: 5-1
+  - first:
+      213: -139978788932989117
+    second: 6-1
+  - first:
+      213: 1615218501662067704
+    second: 0-2
+  - first:
+      213: 6532612042955418945
+    second: 1-2
+  - first:
+      213: -522115676820723469
+    second: 2-2
+  - first:
+      213: 2097700608048692660
+    second: 3-2
+  - first:
+      213: 2493938402010816317
+    second: 4-2
+  - first:
+      213: -4257372302534504602
+    second: 5-2
+  - first:
+      213: 5647208906510634499
+    second: 6-2
+  - first:
+      213: -2512051317101982091
+    second: 0-3
+  - first:
+      213: 1337468555375099807
+    second: 1-3
+  - first:
+      213: 4339256791073431986
+    second: 2-3
+  - first:
+      213: -3847650207813248957
+    second: 3-3
+  - first:
+      213: -8569996640251225051
+    second: 4-3
+  - first:
+      213: -5861815186469460872
+    second: 5-3
+  - first:
+      213: 1159942537097192630
+    second: 6-3
+  - first:
+      213: 4002499520525284069
+    second: 0-4
+  - first:
+      213: 1135851537053331386
+    second: 1-4
+  - first:
+      213: 7972260265255644093
+    second: 2-4
+  - first:
+      213: -3222688392602792425
+    second: 3-4
+  - first:
+      213: 9120623332920994093
+    second: 4-4
+  - first:
+      213: 3810610431901662934
+    second: 5-4
+  - first:
+      213: -5844025399030636893
+    second: 6-4
+  - first:
+      213: -4638129782572148372
+    second: BuildingPreset_0
+  - first:
+      213: 6140143881951963993
+    second: BuildingPreset_1
+  - first:
+      213: 6859378127576519766
+    second: BuildingPreset_2
+  - first:
+      213: 3401075937287083839
+    second: BuildingPreset_3
+  - first:
+      213: -861831106563715110
+    second: BuildingPreset_4
+  - first:
+      213: -2318860238745921875
+    second: BuildingPreset_5
+  - first:
+      213: 7874175655530670405
+    second: BuildingPreset_6
+  - first:
+      213: -3768249299306361443
+    second: BuildingPreset_7
+  - first:
+      213: -7600421367632293663
+    second: BuildingPreset_8
+  - first:
+      213: 3721250475526380523
+    second: BuildingPreset_9
+  - first:
+      213: -595695616425729906
+    second: BuildingPreset_10
+  - first:
+      213: 6176005604985262297
+    second: BuildingPreset_11
+  - first:
+      213: -6237533198032612247
+    second: BuildingPreset_12
+  - first:
+      213: 7204263014227451438
+    second: BuildingPreset_13
+  - first:
+      213: 8497147946514385885
+    second: BuildingPreset_14
+  - first:
+      213: -8372512289310583344
+    second: BuildingPreset_15
+  - first:
+      213: -1610334265313546698
+    second: BuildingPreset_16
+  - first:
+      213: -5023951272528773195
+    second: BuildingPreset_17
+  - first:
+      213: 3692513773653641144
+    second: BuildingPreset_18
+  - first:
+      213: 6326704775583413460
+    second: BuildingPreset_19
+  - first:
+      213: -6473668185527423244
+    second: BuildingPreset_20
+  - first:
+      213: -1882256127772169377
+    second: BuildingPreset_21
+  - first:
+      213: 4282899020145967416
+    second: BuildingPreset_22
+  - first:
+      213: -3549251267592417245
+    second: BuildingPreset_23
+  - first:
+      213: 692905096307861784
+    second: BuildingPreset_24
+  - first:
+      213: -3845754615542646542
+    second: BuildingPreset_25
+  - first:
+      213: -3395002295354206382
+    second: BuildingPreset_26
+  - first:
+      213: 2644418767810066897
+    second: BuildingPreset_27
+  - first:
+      213: 6882054014755580338
+    second: BuildingPreset_28
+  - first:
+      213: -8473491941425644510
+    second: BuildingPreset_29
+  - first:
+      213: 8474543199111349756
+    second: BuildingPreset_30
+  - first:
+      213: 8477397309262660697
+    second: BuildingPreset_31
+  - first:
+      213: -3800916685001166169
+    second: BuildingPreset_32
+  - first:
+      213: 7343470214902159994
+    second: BuildingPreset_33
+  - first:
+      213: 5348174812777142773
+    second: BuildingPreset_34
+  - first:
+      213: -6021494779315904450
+    second: BuildingPreset_35
+  - first:
+      213: -3050298507840568572
+    second: BuildingPreset_36
+  - first:
+      213: 7969489715690497848
+    second: BuildingPreset_37
+  - first:
+      213: 1683713824073694887
+    second: BuildingPreset_38
+  - first:
+      213: 4308991053485752841
+    second: BuildingPreset_39
+  - first:
+      213: 2418675733024605263
+    second: BuildingPreset_40
+  - first:
+      213: -9060457612096417707
+    second: BuildingPreset_41
+  - first:
+      213: -7376842225308841531
+    second: BuildingPreset_42
+  - first:
+      213: -8656744415880605507
+    second: BuildingPreset_43
+  - first:
+      213: -4817411486009389763
+    second: BuildingPreset_44
+  - first:
+      213: 3576097174509395177
+    second: BuildingPreset_45
+  - first:
+      213: -2322846618364225246
+    second: BuildingPreset_46
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BuildingPreset_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 328
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6990af598d02afb0800000000000000
+      internalID: -4638129782572148372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 328
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95be889245c263550800000000000000
+      internalID: 6140143881951963993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 328
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65458428018613f50800000000000000
+      internalID: 6859378127576519766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 328
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3710289b8c033f20800000000000000
+      internalID: 3401075937287083839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf43ecbc292a04f0800000000000000
+      internalID: -861831106563715110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: da695c116e0c1dfd0800000000000000
+      internalID: -2318860238745921875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5492fee1a01b64d60800000000000000
+      internalID: 7874175655530670405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dcab13a3d74bbc0800000000000000
+      internalID: -3768249299306361443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e01dfee801e58690800000000000000
+      internalID: -7600421367632293663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebd00a679984a330800000000000000
+      internalID: 3721250475526380523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_10
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80efa43ef9abb7f0800000000000000
+      internalID: -595695616425729906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_11
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0d7f7306495b550800000000000000
+      internalID: 6176005604985262297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 264
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9645f80ba94df69a0800000000000000
+      internalID: -6237533198032612247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 264
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e1387aa0faaf360800000000000000
+      internalID: 7204263014227451438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 264
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb0eeb990febe570800000000000000
+      internalID: 8497147946514385885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 264
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5dc0eae6cdecb80800000000000000
+      internalID: -8372512289310583344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 232
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ea8528481f6a9e0800000000000000
+      internalID: -1610334265313546698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 232
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bffc088fe6574ab0800000000000000
+      internalID: -5023951272528773195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 232
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7ccde96b17e3330800000000000000
+      internalID: 3692513773653641144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 232
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4ba6b1978fcc750800000000000000
+      internalID: 6326704775583413460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fee3ef8519e826a0800000000000000
+      internalID: -6473668185527423244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b66df3602e0e5e0800000000000000
+      internalID: -1882256127772169377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8314ba097f9ef6b30800000000000000
+      internalID: 4282899020145967416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3209c80e6c68ebec0800000000000000
+      internalID: -3549251267592417245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819ec709381bd9900800000000000000
+      internalID: 692905096307861784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_25
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8f2478d8221aac0800000000000000
+      internalID: -3845754615542646542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_26
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257d6cd566782e0d0800000000000000
+      internalID: -3395002295354206382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_27
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9f1bccbdcd2b420800000000000000
+      internalID: 2644418767810066897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 168
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9ae8ae9a7f18f50800000000000000
+      internalID: 6882054014755580338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 168
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c703849fb186a80800000000000000
+      internalID: -8473491941425644510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 168
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf50cb8b320ab9570800000000000000
+      internalID: 8474543199111349756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_31
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 168
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954047600f3c5a570800000000000000
+      internalID: 8477397309262660697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 104
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a276a1c96e604bc0800000000000000
+      internalID: -3800916685001166169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 104
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a97e9c04f39e560800000000000000
+      internalID: 7343470214902159994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 104
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9d54808a8883a40800000000000000
+      internalID: 5348174812777142773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_35
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30a106c66a5f6ca0800000000000000
+      internalID: -6021494779315904450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40342451ba92ba5d0800000000000000
+      internalID: -3050298507840568572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8376cd81ca0599e60800000000000000
+      internalID: 7969489715690497848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aeb3536dc0cd5710800000000000000
+      internalID: 1683713824073694887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902ca5b788c9ccb30800000000000000
+      internalID: 4308991053485752841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_40
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f440ac5b3ccd09120800000000000000
+      internalID: 2418675733024605263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_41
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55052806ec9c24280800000000000000
+      internalID: -9060457612096417707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c94d5c841130a990800000000000000
+      internalID: -7376842225308841531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_43
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: db01714b1d01dd780800000000000000
+      internalID: -8656744415880605507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 40
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d0687f6cd152db0800000000000000
+      internalID: -4817411486009389763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 40
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec19e8ee69d0a130800000000000000
+      internalID: 3576097174509395177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingPreset_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 40
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 1, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+        - {x: 0, y: -16}
+      physicsShape:
+      - - {x: -16, y: -7}
+        - {x: 0, y: 0}
+        - {x: 16, y: -7}
+        - {x: 0, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229deacbe4793cfd0800000000000000
+      internalID: -2322846618364225246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

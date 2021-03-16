@@ -85,8 +85,10 @@ public class GlobalInputController : MonoBehaviour
         ResetKeyDown();
         ResetKeyRelease();
 
-        hInput = Input.GetAxis("Horizontal");
-        vInput = Input.GetAxis("Vertical");
+        hInput = Input.GetAxisRaw("Horizontal");
+        vInput = Input.GetAxisRaw("Vertical");
+        hInput = Mathf.Abs(hInput) > 0.2f ? hInput : 0f;
+        vInput = Mathf.Abs(vInput) > 0.1f ? vInput : 0f;
 
         if (CheckKeyAssigned(KeyType.Use))
         {
