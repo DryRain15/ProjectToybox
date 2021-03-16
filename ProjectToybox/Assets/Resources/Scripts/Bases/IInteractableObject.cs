@@ -14,8 +14,9 @@ public enum InteractState
 }
 public interface IInteractableObject
 {
+    GameObject GameObject { get; }
     InteractState InteractState { get; set; }
-    void Interact(IFieldObject target);
+    void Interact(ICharacterObject target);
     void ShowInteractable();
     void HideInteractable();
 }

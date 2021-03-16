@@ -13,10 +13,11 @@ public enum HoldState
 }
 public interface IHoldable
 {
+    GameObject GameObject { get; }
     HoldState HoldState { get; set; }
     ICharacterObject Holder { get; set; }
     
-    void Hold(IFieldObject target);
+    void Hold(ICharacterObject target);
     void Use();
     void Release();
 

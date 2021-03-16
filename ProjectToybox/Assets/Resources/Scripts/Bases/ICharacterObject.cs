@@ -14,7 +14,9 @@ public class Stats
 
 public interface ICharacterObject
 {
+    GameObject GameObject { get; }
     Direction Direction { get; set; }
 
+    Transform Transform { get; }
     Stats Stats { get; set; }
 }
