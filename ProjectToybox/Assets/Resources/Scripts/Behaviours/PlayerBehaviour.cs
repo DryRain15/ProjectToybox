@@ -111,7 +111,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         for (int i = 0; i < hits.Length; i++)
         {
             var tiio = hits[i].GetComponent<IInteractableObject>();
-            if (tiio != null)
+            if (tiio != null && tiio.InteractState == InteractState.Interactable)
             {
                 var t_dist = Vector3.Distance(hits[i].transform.position, transform.position);
                 if (t_dist < dist && 
