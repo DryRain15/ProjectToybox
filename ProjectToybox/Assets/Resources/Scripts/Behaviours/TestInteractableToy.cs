@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using Proto;
 using UnityEngine;
 
-public class TestInteractableToy : MonoBehaviour, IInteractableObject, IFieldObject, ICharacterObject
+public class TestInteractableToy : MonoBehaviour, IInteractableObject, IFieldObject, ICharacterObject, IDamaged
 {
     private IPooledObject _interactableFX;
+    private SpriteRenderer _sr;
     private float _innerTimer;
     
     // Start is called before the first frame update
     void Start()
     {
         InteractState = InteractState.Interactable;
+        AnimState = AnimState.Stand;
         Direction = Direction.Down | Direction.Right;
+        HitType = HitType.Enemy;
         Stats = new Stats()
         {
             Hp = 10f,
@@ -22,6 +25,17 @@ public class TestInteractableToy : MonoBehaviour, IInteractableObject, IFieldObj
             MoveSpeed = 2f,
         };
         _innerTimer = 0f;
+        _sr = GetComponentInChildren<SpriteRenderer>();
+        
+        EventController.Instance.Subscribe("DebugEvent", DebugEvent);
+    }
+
+    void DebugEvent(EventParameter param)
+    {
+        if (param.Param.ContainsKey("SpaceKey") && param.Param["SpaceKey"] is bool)
+        {
+            Interact(FindObjectOfType<PlayerBehaviour>());
+        }
     }
 
     // Update is called once per frame
@@ -40,6 +54,7 @@ public class TestInteractableToy : MonoBehaviour, IInteractableObject, IFieldObj
     public string Name { get; set; }
     public GameObject GameObject { get => gameObject; }
     public Transform Transform { get => transform;}
+    public Transform GFXTransform { get => transform.GetChild(0); }
     public Vector3 Position
     {
         get => transform.position;
@@ -111,7 +126,23 @@ public class TestInteractableToy : MonoBehaviour, IInteractableObject, IFieldObj
 
     public Direction Direction { get; set; }
 
+    public AnimState AnimState { get; set; }
+
     public Stats Stats { get; set; }
 
     #endregion
+    
+    #region IDamaged
+
+    public HitType HitType { get; set; }
+    public void GetHit(DamageState state)
+    {
+        if (InteractState == InteractState.Interactable)
+            Utils.DamageRedPulse(_sr);
+        Interact(state.Sender);
+        Debug.Log(string.Format($"{state.Damage}damage dealt from {state.Sender} to {state.Getter}"));
+    }
+
+    #endregion
+
 }

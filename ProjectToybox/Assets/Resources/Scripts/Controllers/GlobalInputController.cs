@@ -159,6 +159,14 @@ public class GlobalInputController : MonoBehaviour
                 menuKeyRelease = true;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            EventParameter param = new EventParameter(
+                "SpaceKey".EventParameterPairing(true), 
+                "EnterKey".EventParameterPairing(true)); 
+            EventController.Instance.EventCall("DebugEvent", param);
+        }
     }
 
     private void ResetKeyDown()
@@ -238,7 +246,7 @@ public class GlobalInputController : MonoBehaviour
             Event.current.keyCode != KeyCode.None)
         {
             LastKey = Event.current.keyCode;
-            Debug.Log(LastKey);
+            // Debug.Log(LastKey);
         }
     }
 }

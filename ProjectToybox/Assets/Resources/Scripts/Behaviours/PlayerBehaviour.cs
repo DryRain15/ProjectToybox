@@ -24,6 +24,8 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
             Fever = 1.3f,
             MoveSpeed = 2f,
         };
+        AnimState = AnimState.Stand;
+        HitType = HitType.Player;
     }
 
     // Update is called once per frame
@@ -111,7 +113,9 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         for (int i = 0; i < hits.Length; i++)
         {
             var tiio = hits[i].GetComponent<IInteractableObject>();
-            if (tiio != null && tiio.InteractState == InteractState.Interactable)
+            if (tiio != null && 
+                tiio.InteractState == InteractState.Interactable &&
+                _currentHold == null)
             {
                 var t_dist = Vector3.Distance(hits[i].transform.position, transform.position);
                 if (t_dist < dist && 
@@ -152,6 +156,8 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
     public Direction Direction { get; set; }
 
+    public AnimState AnimState { get; set; }
+
     public Stats Stats { get; set; }
 
     #endregion
@@ -162,6 +168,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     
     public GameObject GameObject { get => gameObject; }
     public Transform Transform { get => transform;}
+    public Transform GFXTransform { get => transform.GetChild(0); }
     public Vector3 Position
     {
         get => transform.position;
@@ -176,7 +183,17 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     
     public void MoveTo()
     {
-        if (Velocity.magnitude < Mathf.Epsilon) return;
+        _anim.ResetTrigger("ActionStateOnChange");
+        var prevAnim = AnimState;
+        if (Velocity.magnitude < Mathf.Epsilon)
+            AnimState = AnimState.Stand;
+        else
+            AnimState = AnimState.Move;
+        
+        _anim.SetInteger("ActionState", (int)AnimState);
+        if (prevAnim != AnimState)
+            _anim.SetTrigger("ActionStateOnChange");
+        if (AnimState == AnimState.Stand) return;
         
         var hit = Physics2D.Raycast(Position, 
             Velocity.normalized,
@@ -249,7 +266,8 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     
     #region IDamaged
 
-    public void GetHit()
+    public HitType HitType { get; set; }
+    public void GetHit(DamageState state)
     {
         
     }

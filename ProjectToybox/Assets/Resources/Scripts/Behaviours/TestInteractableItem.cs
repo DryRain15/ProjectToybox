@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Proto;
@@ -37,6 +38,7 @@ public class TestInteractableItem : MonoBehaviour, IInteractableObject, IHoldabl
     public string Name { get; set; }
     public GameObject GameObject { get => gameObject; }
     public Transform Transform { get => transform;}
+    public Transform GFXTransform { get => transform.GetChild(0); }
     public Vector3 Position
     {
         get => transform.position;
@@ -125,6 +127,34 @@ public class TestInteractableItem : MonoBehaviour, IInteractableObject, IHoldabl
         {
             HoldState = HoldState.Holding;
         }
+
+        OnCollisionCheck();
+    }
+
+    public void OnCollisionCheck()
+    {
+        var pos = Holder.Transform.position + Utils.GetAngularOffset(Holder.Direction, 0.5f);
+        Collider2D[] hits = Physics2D.OverlapBoxAll(pos, 
+            new Vector2(1f, 0.5f), 0, 1 << 9);
+
+        
+        for (int i = 0; i < hits.Length; i++)
+        {
+            var tidmg = hits[i].GetComponent<IDamaged>();
+            if (tidmg != null && tidmg.HitType == HitType.Enemy)
+            {
+                DamageState state = new DamageState()
+                {
+                    Damage = Holder.Stats.Atk,
+                    DamageType = 0,
+                    Getter = tidmg.GameObject.GetComponent<ICharacterObject>(),
+                    Sender = Holder,
+                    KnockBack = 1f,
+                };
+                tidmg.GetHit(state);
+            }
+        }
+
     }
     
     #endregion
@@ -166,4 +196,14 @@ public class TestInteractableItem : MonoBehaviour, IInteractableObject, IHoldabl
     
     #endregion
 
+    private void OnDrawGizmos()
+    {
+        if (Holder != null)
+        {
+            var pos = Holder.Transform.position + Utils.GetAngularOffset(Holder.Direction, 0.5f);
+            Gizmos.color = Color.red;
+
+            Gizmos.DrawWireCube(pos, new Vector2(1f, 0.5f));
+        }
+    }
 }
