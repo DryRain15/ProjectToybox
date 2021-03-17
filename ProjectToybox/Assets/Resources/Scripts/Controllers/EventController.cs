@@ -7,6 +7,15 @@ using UnityEngine.Events;
 public class EventParameter
 {
     public Dictionary<string, object> Param;
+
+    public EventParameter(params KeyValuePair<string, object>[] dict)
+    {
+        Param = new Dictionary<string, object>();
+        foreach (var pair in dict)
+        {
+            Param.Add(pair.Key, pair.Value);
+        }
+    }
 }
 
 public class EventController : MonoBehaviour
