@@ -5,25 +5,24 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IMovable, IDamaged
 {
+    public static PlayerBehaviour Instance;
+    
     private Vector3 _collisionPoint;
     private Animator _anim;
     private SpriteRenderer _sr;
     private IInteractableObject _currentItem;
     private IHoldable _currentHold;
-    
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         _anim = GetComponentInChildren<Animator>();
         _sr = GetComponentInChildren<SpriteRenderer>();
-        Stats = new Stats()
-        {
-            Hp = 10f,
-            HpGen = 0.1f,
-            Atk = 3f,
-            Fever = 1.3f,
-            MoveSpeed = 2f,
-        };
         AnimState = AnimState.Stand;
         HitType = HitType.Player;
     }
@@ -31,28 +30,10 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     // Update is called once per frame
     void Update()
     {
-        
-        Velocity = new Vector3(GlobalInputController.Instance.hInput,
-            GlobalInputController.Instance.vInput * 0.5f) * Stats.MoveSpeed;
         MoveTo();
         FaceDirection();
 
         InputCheck();
-        
-        if (Direction != Direction.None)
-        {
-            var up = (Direction.Up & Direction) == Direction.Up;
-            var down = (Direction.Down & Direction) == Direction.Down;
-            var left = (Direction.Left & Direction) == Direction.Left;
-            var right = (Direction.Right & Direction) == Direction.Right;
-                
-            _anim.SetBool("IsUp", up);
-            _anim.SetBool("IsDown", down);
-            _anim.SetBool("IsLeft", left);
-            _anim.SetBool("IsRight", right);
-
-            _sr.flipX = right;
-        }
     }
 
     private void InputCheck()
@@ -158,7 +139,8 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
     public AnimState AnimState { get; set; }
 
-    public Stats Stats { get; set; }
+    [SerializeField] private Stats stats;
+    public Stats Stats { get => stats; set => stats = value; }
 
     #endregion
 
@@ -183,17 +165,34 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     
     public void MoveTo()
     {
+        var singleDirectionMult = (GlobalInputController.Instance.hInput * GlobalInputController.Instance.vInput == 0)
+            ? Mathf.Sqrt(5) / 2
+            : 1; 
+        Velocity = new Vector3(GlobalInputController.Instance.hInput,
+            GlobalInputController.Instance.vInput * 0.5f) * (singleDirectionMult * Stats.moveSpeed);
+        
         _anim.ResetTrigger("ActionStateOnChange");
         var prevAnim = AnimState;
-        if (Velocity.magnitude < Mathf.Epsilon)
-            AnimState = AnimState.Stand;
+        if (_currentHold != null)
+        {
+            if (Velocity.magnitude < Mathf.Epsilon)
+                AnimState = AnimState.Hold;
+            else
+                AnimState = AnimState.HoldMove;
+        }
         else
-            AnimState = AnimState.Move;
+        {
+            if (Velocity.magnitude < Mathf.Epsilon)
+                AnimState = AnimState.Stand;
+            else
+                AnimState = AnimState.Move;
+        }
         
         _anim.SetInteger("ActionState", (int)AnimState);
         if (prevAnim != AnimState)
             _anim.SetTrigger("ActionStateOnChange");
-        if (AnimState == AnimState.Stand) return;
+        if (AnimState == AnimState.Stand | 
+            AnimState == AnimState.Hold) return;
         
         var hit = Physics2D.Raycast(Position, 
             Velocity.normalized,
@@ -260,6 +259,21 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         if (prevHDir != ((Direction.Left & Direction) | (Direction.Right & Direction)) ||
             prevVDir != ((Direction.Up & Direction) | (Direction.Down & Direction)))
             _anim.SetTrigger("DirectionOnChange");
+        
+        if (Direction != Direction.None)
+        {
+            var up = Utils.DirectionContains(Direction, Direction.Up);
+            var down = Utils.DirectionContains(Direction, Direction.Down);
+            var left = Utils.DirectionContains(Direction, Direction.Left);
+            var right = Utils.DirectionContains(Direction, Direction.Right);
+                
+            _anim.SetBool("IsUp", up);
+            _anim.SetBool("IsDown", down);
+            _anim.SetBool("IsLeft", left);
+            _anim.SetBool("IsRight", right);
+
+            _sr.flipX = right;
+        }
     }
 
     #endregion

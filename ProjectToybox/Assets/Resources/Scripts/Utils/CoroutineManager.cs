@@ -17,7 +17,7 @@ public class CoroutineManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(Coroutines.Count);
+        Debug.Log(string.Format($"{Coroutines.Count} running coroutine"));
     }
 
     public void StartCoroutineCall(IEnumerator coroutine)

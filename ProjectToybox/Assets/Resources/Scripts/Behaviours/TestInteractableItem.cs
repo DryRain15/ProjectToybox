@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Proto;
 using UnityEngine;
 
-public class TestInteractableItem : MonoBehaviour, IInteractableObject, IHoldable, IFieldObject
+public class TestInteractableItem : MonoBehaviour, IInteractableObject, IHoldable, IFieldObject, ICharacterObject
 {
     private IPooledObject _interactableFX;
     private float _innerTimer;
@@ -33,6 +33,17 @@ public class TestInteractableItem : MonoBehaviour, IInteractableObject, IHoldabl
         _innerTimer += Time.deltaTime;
     }
 
+    #region ICharacterObject
+
+    public Direction Direction { get; set; }
+    public AnimState AnimState { get; set; }
+
+    [SerializeField] private Stats stats;
+    public Stats Stats { get => stats; set => stats = value; }
+    
+
+    #endregion
+    
     #region IFieldObject
 
     public string Name { get; set; }
@@ -145,7 +156,7 @@ public class TestInteractableItem : MonoBehaviour, IInteractableObject, IHoldabl
             {
                 DamageState state = new DamageState()
                 {
-                    Damage = Holder.Stats.Atk,
+                    Damage = Holder.Stats.atk,
                     DamageType = 0,
                     Getter = tidmg.GameObject.GetComponent<ICharacterObject>(),
                     Sender = Holder,

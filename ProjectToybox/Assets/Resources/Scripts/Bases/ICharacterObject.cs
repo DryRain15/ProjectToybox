@@ -1,25 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Proto;
 using UnityEngine;
 
-public class Stats
-{
-    public float Hp;
-    public float HpGen;
-    public float Atk;
-    public float Fever;
-    public float MoveSpeed;
-}
-
 public enum AnimState
 {
     Stand = 0,
     Move = 1,
-    Attack = 2,
-    Interact = 3,
-    Hold = 4,
-    HoldMove = 5,
+    Hold = 2,
+    HoldMove = 3,
+    Attack = 4,
+    Interact = 5,
     Dance = 6,
     Dash = 7,
 }

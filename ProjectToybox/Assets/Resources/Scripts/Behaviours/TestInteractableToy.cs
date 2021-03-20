@@ -16,14 +16,6 @@ public class TestInteractableToy : MonoBehaviour, IInteractableObject, IFieldObj
         AnimState = AnimState.Stand;
         Direction = Direction.Down | Direction.Right;
         HitType = HitType.Enemy;
-        Stats = new Stats()
-        {
-            Hp = 10f,
-            HpGen = 0.1f,
-            Atk = 3f,
-            Fever = 1.3f,
-            MoveSpeed = 2f,
-        };
         _innerTimer = 0f;
         _sr = GetComponentInChildren<SpriteRenderer>();
         
@@ -128,7 +120,8 @@ public class TestInteractableToy : MonoBehaviour, IInteractableObject, IFieldObj
 
     public AnimState AnimState { get; set; }
 
-    public Stats Stats { get; set; }
+    [SerializeField] private Stats stats;
+    public Stats Stats { get => stats; set => stats = value; }
 
     #endregion
     
