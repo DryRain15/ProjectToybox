@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Proto;
@@ -33,7 +34,8 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
 
     void DebugEvent(EventParameter param)
     {
-        if (param.Param.ContainsKey("SpaceKey") && param.Param["SpaceKey"] is bool)
+        var spaceKey = param.Get<bool>("SpaceKey");
+        if (spaceKey)
         {
             Interact(FindObjectOfType<PlayerBehaviour>());
         }
@@ -41,22 +43,20 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
 
     void ToBattleState(EventParameter param)
     {
-        if (param.Param.ContainsKey("BattleGroup") && param.Param["BattleGroup"] is string)
-        {
-            if (param.Param["BattleGroup"] as string == BattleGroup)
-                OnStateTransition(AutoState.Wait);
-        }
+        var paramBattleGroup = param.Get<string>("BattleGroup");
+        if (paramBattleGroup == null) return;
+        if(paramBattleGroup == BattleGroup)
+            OnStateTransition(AutoState.Wait);
     }
 
     void ToNoticeState(EventParameter param)
     {
-        if (param.Param.ContainsKey("NoticeGroup") && param.Param["NoticeGroup"] is string)
-        {
-            if (param.Param["NoticeGroup"] as string == NoticeGroup)
-                OnStateTransition(AutoState.Follow);
-        }
+        var paramNoticeGroup = param.Get<string>("NoticeGroup");
+        if (paramNoticeGroup == null) return;
+        if(paramNoticeGroup == NoticeGroup)
+            OnStateTransition(AutoState.Follow);
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -134,7 +134,7 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
         var prevVDir = (Direction.Up & Direction) | (Direction.Down & Direction);
         
         Direction = Direction.None;
-        
+
         if (Velocity.x < 0)
         {
             Direction = Direction.Left;
@@ -143,7 +143,7 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
         {
             Direction = Direction.Right;
         }
-        
+
         if (Velocity.y < 0)
         {
             Direction = Direction | Direction.Down;
@@ -152,25 +152,25 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
         {
             Direction = Direction | Direction.Up;
         }
-        
+
         if ((prevHDir | prevVDir) != Direction.None && Direction == Direction.None)
         {
             Direction = prevHDir | prevVDir;
             return;
         }
-        
+
         if (prevHDir != ((Direction.Left & Direction) | (Direction.Right & Direction)) ||
             prevVDir != ((Direction.Up & Direction) | (Direction.Down & Direction)))
             _anim.SetTrigger("DirectionOnChange");
-        
-        
+
+
         if (Direction != Direction.None)
         {
             var up = Utils.DirectionContains(Direction, Direction.Up);
             var down = Utils.DirectionContains(Direction, Direction.Down);
             var left = Utils.DirectionContains(Direction, Direction.Left);
             var right = Utils.DirectionContains(Direction, Direction.Right);
-                
+
             _anim.SetBool("IsUp", up);
             _anim.SetBool("IsDown", down);
             _anim.SetBool("IsLeft", left);
@@ -181,7 +181,7 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
     }
 
     #endregion
-    
+
     #region IAutoBehaviour
 
     [SerializeField] private string battleGroup;
@@ -196,17 +196,17 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
         // Dispose Step for previous state
         switch (AutoState)
         {
-            
+
         }
-        
+
         AutoState = to;
-        
+
         // Initiate Step for next state
         switch (to)
         {
-            
+
         }
-        
+
     }
 
     public void AutoUpdate()
@@ -216,7 +216,7 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
             Velocity = Vector3.zero;
             return;
         }
-        
+
         switch (AutoState)
         {
             case AutoState.None:
@@ -249,9 +249,9 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
                 break;
         }
     }
-    
+
     #endregion
-    
+
     #region IFieldObject
 
     public string Name { get; set; }
@@ -290,10 +290,10 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
         var yVelocity = 2.5f - 2.5f * (_innerTimer / 0.5f);
         Transform.GetChild(0).localPosition += new Vector3(0f, 1f, 2f) * (yVelocity * Time.deltaTime);
     }
-    
+
 
     #region IInteractableObject
-    
+
     public InteractState InteractState { get; set; }
 
     public void Interact(ICharacterObject target)
@@ -322,13 +322,13 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
             InteractState = InteractState.OnAction;
             return;
         }
-        
+
     }
 
     public void ShowInteractable()
     {
         if (InteractState != InteractState.Interactable) return;
-        
+
         if (_interactableFX == null)
             _interactableFX = ObjectPoolController.Self.Instantiate("InteractableFX",
             new PoolParameters(transform.position + Vector3.up * 0.5f));
@@ -337,11 +337,11 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
     public void HideInteractable()
     {
         if (_interactableFX == null) return;
-        
+
         _interactableFX.Dispose();
         _interactableFX = null;
     }
-    
+
     #endregion
 
     #region ICharacterObject
@@ -354,7 +354,7 @@ public class TestInteractableEnemy : MonoBehaviour, IInteractableObject, IFieldO
     public Stats Stats { get => stats; set => stats = value; }
 
     #endregion
-    
+
     #region IDamaged
 
     public HitType HitType { get; set; }

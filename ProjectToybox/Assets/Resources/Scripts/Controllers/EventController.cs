@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -15,6 +16,18 @@ public class EventParameter
         {
             Param.Add(pair.Key, pair.Value);
         }
+    }
+
+    public object this[string key]
+    {
+        get => Param[key];
+        set => Param[key] = value;
+    }
+
+    [CanBeNull]
+    public T Get<T>(string key)
+    {
+        return this[key] is T ? (T)this[key] : default;
     }
 }
 
