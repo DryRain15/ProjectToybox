@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IMovable, IDamaged
@@ -12,6 +13,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     private SpriteRenderer _sr;
     private IInteractableObject _currentItem;
     private IHoldable _currentHold;
+    public float _velocityMultiplier = 1f;
 
     private void Awake()
     {
@@ -170,7 +172,23 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
             : 1; 
         Velocity = new Vector3(GlobalInputController.Instance.hInput,
             GlobalInputController.Instance.vInput * 0.5f) * (singleDirectionMult * Stats.moveSpeed);
-        
+
+        Velocity *= _velocityMultiplier;
+
+        if (GlobalInputController.Instance.dashKeyDown)
+        {
+            var isDashing = _velocityMultiplier > 1f;
+            if (!isDashing) {
+                var core = DOTween.To(() => _velocityMultiplier, x => _velocityMultiplier = x, 3f, .15f);
+                core.SetTarget(_velocityMultiplier);
+                core.SetEase(Ease.OutExpo);
+                core.OnComplete(() =>
+                {
+                    _velocityMultiplier = 1f;
+                });
+            }
+        }
+
         _anim.ResetTrigger("ActionStateOnChange");
         var prevAnim = AnimState;
         if (_currentHold != null)
@@ -249,24 +267,24 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         {
             Direction = Direction | Direction.Up;
         }
-        
+
         if ((prevHDir | prevVDir) != Direction.None && Direction == Direction.None)
         {
             Direction = prevHDir | prevVDir;
             return;
         }
-        
+
         if (prevHDir != ((Direction.Left & Direction) | (Direction.Right & Direction)) ||
             prevVDir != ((Direction.Up & Direction) | (Direction.Down & Direction)))
             _anim.SetTrigger("DirectionOnChange");
-        
+
         if (Direction != Direction.None)
         {
             var up = Utils.DirectionContains(Direction, Direction.Up);
             var down = Utils.DirectionContains(Direction, Direction.Down);
             var left = Utils.DirectionContains(Direction, Direction.Left);
             var right = Utils.DirectionContains(Direction, Direction.Right);
-                
+
             _anim.SetBool("IsUp", up);
             _anim.SetBool("IsDown", down);
             _anim.SetBool("IsLeft", left);
@@ -277,7 +295,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     }
 
     #endregion
-    
+
     #region IDamaged
 
     public HitType HitType { get; set; }
