@@ -13,7 +13,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     private SpriteRenderer _sr;
     private IInteractableObject _currentItem;
     private IHoldable _currentHold;
-    public float _velocityMultiplier = 1f;
+    private float _velocityMultiplier = 1f;
 
     private void Awake()
     {
