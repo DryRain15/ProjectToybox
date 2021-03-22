@@ -42,12 +42,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1849708782281501051}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90e2c1b45caaee942b568089d41850ab, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a646e8150d5449c8d2d250809ae0278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 0373fb643e0e4c24e999787102b5ff16, type: 2}
   battleGroup: TestBattle
   noticeGroup: TestNotice
-  stats: {fileID: 11400000, guid: 10d584bcf738cf742baeef4669670b2d, type: 2}
 --- !u!61 &1849708782281501052
 BoxCollider2D:
   m_ObjectHideFlags: 0

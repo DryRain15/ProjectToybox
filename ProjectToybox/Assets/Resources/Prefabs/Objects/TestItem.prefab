@@ -42,9 +42,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4911970018505999449}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9408a2cb18c016449907f236b081dc00, type: 3}
+  m_Script: {fileID: 11500000, guid: ab3a758a10a54e27a3477ffa1572e302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stats: {fileID: 0}
 --- !u!61 &4911970018505999451
 BoxCollider2D:
   m_ObjectHideFlags: 0
