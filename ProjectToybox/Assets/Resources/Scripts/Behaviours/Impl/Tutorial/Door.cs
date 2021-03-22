@@ -16,8 +16,7 @@ namespace Proto.Behaviours.Impl.Tutorial
 
         private void NextPhase()
         {
-            //TODO: next to phase 3
-            // SceneManager.LoadSceneAsync("Phase3");
+            SceneManager.LoadSceneAsync("Phase3");
         }
     }
 

@@ -32,7 +32,7 @@ public class GlobalInputController : MonoBehaviour
 
     #region KeyAssign
 
-    public InputType InputType { get; set; }
+    public InputType InputType { get; set; } = InputType.None;
 
     public KeyCode UseKey { get; set; }
     public KeyCode CancelKey { get; set; }
@@ -77,7 +77,11 @@ public class GlobalInputController : MonoBehaviour
     private void Awake()
     {
         if(Instance != null) Destroy(gameObject);
-        else Instance = this;
+        else
+        {
+            Instance = this;
+            AssignDefault();
+        }
         DontDestroyOnLoad(gameObject);
     }
 
@@ -86,8 +90,13 @@ public class GlobalInputController : MonoBehaviour
     {
         hInput = 0f;
         vInput = 0f;
-        InputType = InputType.None;
-        // AssignKey(KeyType.Use, KeyCode.J);
+    }
+
+    private void AssignDefault()
+    {
+        Debug.Log("Assigning default key settings");
+        InputType = InputType.WASD;
+        AssignKey(KeyType.Use, KeyCode.J);
         AssignKey(KeyType.Dash, KeyCode.L);
         AssignKey(KeyType.Cancel, KeyCode.K);
         AssignKey(KeyType.Debug, KeyCode.Tab);
