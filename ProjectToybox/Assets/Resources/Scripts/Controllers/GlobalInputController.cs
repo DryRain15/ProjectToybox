@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 public enum KeyType
@@ -25,7 +26,7 @@ public enum InputType
 public class GlobalInputController : MonoBehaviour
 {
     public static GlobalInputController Instance;
-    
+
     public float hInput;
     public float vInput;
 
@@ -40,7 +41,7 @@ public class GlobalInputController : MonoBehaviour
     public KeyCode MenuKey { get; set; }
 
     public KeyCode LastKey;
-    
+
     #endregion
 
     #region KeyDownEvent
@@ -52,7 +53,7 @@ public class GlobalInputController : MonoBehaviour
     public bool menuKeyDown;
 
     #endregion
-    
+
     #region KeyEvent
 
     public bool useKey;
@@ -99,10 +100,32 @@ public class GlobalInputController : MonoBehaviour
         ResetKeyDown();
         ResetKeyRelease();
 
-        hInput = Input.GetAxisRaw("Horizontal");
-        vInput = Input.GetAxisRaw("Vertical");
-        hInput = Mathf.Abs(hInput) > 0.2f ? hInput : 0f;
-        vInput = Mathf.Abs(vInput) > 0.1f ? vInput : 0f;
+
+        hInput = 0f;
+        vInput = 0f;
+        foreach (var targetKey in GetKeyCodes(InputType))
+        {
+            if (Input.GetKey(targetKey))
+            {
+                var data = FindInputTypeWithIndex(targetKey);
+                switch (data.Value)
+                {
+                    case 0:
+                        vInput = 1f;
+                        break;
+                    case 1:
+                        hInput = -1f;
+                        break;
+                    case 2:
+                        vInput = -1f;
+                        break;
+                    case 3:
+                        hInput = 1f;
+                        break;
+
+                }
+            }
+        }
 
         if (CheckKeyAssigned(KeyType.Use))
         {
@@ -266,11 +289,28 @@ public class GlobalInputController : MonoBehaviour
 
     public static InputType FindInputType(KeyCode key)
     {
+        return FindInputTypeWithIndex(key).Key;
+    }
+
+    public static KeyValuePair<InputType, int> FindInputTypeWithIndex(KeyCode key)
+    {
         var wasd = new[] { KeyCode.W, KeyCode.A, KeyCode.S, KeyCode.D };
         var arrow = new[] { KeyCode.UpArrow, KeyCode.LeftArrow, KeyCode.DownArrow, KeyCode.RightArrow };
 
-        if (wasd.Contains(key)) return InputType.WASD;
-        if (arrow.Contains(key)) return InputType.Arrow;
-        return InputType.None;
+        if (wasd.Contains(key)) return new KeyValuePair<InputType, int>(InputType.WASD, ArrayUtility.IndexOf(wasd, key));
+        if (arrow.Contains(key)) return new KeyValuePair<InputType, int>(InputType.Arrow, ArrayUtility.IndexOf(arrow, key));
+        return new KeyValuePair<InputType, int>(InputType.None, -1);
+    }
+
+    public static KeyCode[] GetKeyCodes(InputType type)
+    {
+        var wasd = new[] { KeyCode.W, KeyCode.A, KeyCode.S, KeyCode.D };
+        var arrow = new[] { KeyCode.UpArrow, KeyCode.LeftArrow, KeyCode.DownArrow, KeyCode.RightArrow };
+        return type switch
+        {
+            InputType.WASD => wasd,
+            InputType.Arrow => arrow,
+            _ => new KeyCode[0]
+        };
     }
 }
