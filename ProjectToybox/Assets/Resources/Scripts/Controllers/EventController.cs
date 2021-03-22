@@ -39,7 +39,8 @@ public class EventController : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if(Instance != null) Destroy(gameObject);
+         else Instance = this;
         
         Events = new Dictionary<string, UnityEvent<EventParameter>>();
     }

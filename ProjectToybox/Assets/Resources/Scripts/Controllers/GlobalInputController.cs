@@ -64,7 +64,8 @@ public class GlobalInputController : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if(Instance != null) Destroy(gameObject);
+        else Instance = this;
     }
 
     // Start is called before the first frame update

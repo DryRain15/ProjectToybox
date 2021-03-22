@@ -11,8 +11,15 @@ public class CoroutineManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
-        Coroutines = new Dictionary<IEnumerator, Coroutine>();
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            Coroutines = new Dictionary<IEnumerator, Coroutine>();
+        }
     }
 
     private void FixedUpdate()
