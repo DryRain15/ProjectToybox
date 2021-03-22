@@ -17,7 +17,8 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
     private void Awake()
     {
-        Instance = this;
+        if(Instance != null) Destroy(gameObject);
+        else Instance = this;
     }
 
     // Start is called before the first frame update

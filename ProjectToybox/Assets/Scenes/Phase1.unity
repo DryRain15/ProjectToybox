@@ -217,7 +217,6 @@ GameObject:
   - component: {fileID: 1222077322}
   - component: {fileID: 1222077323}
   - component: {fileID: 1222077325}
-  - component: {fileID: 1222077324}
   m_Layer: 0
   m_Name: PhaseHandler
   m_TagString: Untagged
@@ -252,18 +251,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alarmClip: {fileID: 8300000, guid: 1c7729ceaa94143d2bc828332ea8f0ef, type: 3}
---- !u!114 &1222077324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222077321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da06ee46101d5b6428d80b7ae84157ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1222077325
 AudioSource:
   m_ObjectHideFlags: 2
