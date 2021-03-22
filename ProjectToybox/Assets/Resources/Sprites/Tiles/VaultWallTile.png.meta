@@ -1,0 +1,1448 @@
+fileFormatVersion: 2
+guid: 12e62bd6b8fb3f446a31f0047261cdab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1936504986963392026
+    second: VaultWallTile_0
+  - first:
+      213: 758678993183481541
+    second: VaultWallTile_1
+  - first:
+      213: -6147058113369392625
+    second: VaultWallTile_2
+  - first:
+      213: -8771308403645109280
+    second: VaultWallTile_3
+  - first:
+      213: 3557724921705128377
+    second: VaultWallTile_4
+  - first:
+      213: 2495113634406671097
+    second: VaultWallTile_5
+  - first:
+      213: -8307113148192547842
+    second: VaultWallTile_6
+  - first:
+      213: 7868768308404882252
+    second: VaultWallTile_7
+  - first:
+      213: 2876232734421802561
+    second: VaultWallTile_8
+  - first:
+      213: 8470114144160687946
+    second: VaultWallTile_9
+  - first:
+      213: 7509203668757332045
+    second: VaultWallTile_10
+  - first:
+      213: 555285656639265162
+    second: VaultWallTile_11
+  - first:
+      213: 8096021604850364933
+    second: VaultWallTile_12
+  - first:
+      213: -9021804203183367913
+    second: VaultWallTile_13
+  - first:
+      213: 6530354929921386178
+    second: VaultWallTile_14
+  - first:
+      213: -2936102483932384102
+    second: VaultWallTile_15
+  - first:
+      213: -5526300673683350440
+    second: VaultWallTile_16
+  - first:
+      213: -3040910831222410496
+    second: VaultWallTile_17
+  - first:
+      213: -724225060251907081
+    second: VaultWallTile_18
+  - first:
+      213: -1842854833060663149
+    second: VaultWallTile_19
+  - first:
+      213: 3584230643378191794
+    second: VaultWallTile_20
+  - first:
+      213: 4067981100285616718
+    second: VaultWallTile_21
+  - first:
+      213: 8837792202020476667
+    second: VaultWallTile_22
+  - first:
+      213: 2112279703824324360
+    second: VaultWallTile_23
+  - first:
+      213: -6412736597507521600
+    second: VaultWallTile_24
+  - first:
+      213: -3349505985748810715
+    second: VaultWallTile_25
+  - first:
+      213: 3638439832603554554
+    second: VaultWallTile_26
+  - first:
+      213: -2617407952521462872
+    second: VaultWallTile_27
+  - first:
+      213: 4042739029437184631
+    second: VaultWallTile_28
+  - first:
+      213: -6387719512891880327
+    second: VaultWallTile_29
+  - first:
+      213: 7213332654085904449
+    second: VaultWallTile_30
+  - first:
+      213: -2827696867150836661
+    second: VaultWallTile_31
+  - first:
+      213: -4963548464390331208
+    second: VaultWallTile_32
+  - first:
+      213: -1104061901984956351
+    second: VaultWallTile_33
+  - first:
+      213: 7559950662224325218
+    second: VaultWallTile_34
+  - first:
+      213: 8222587780465470043
+    second: VaultWallTile_35
+  - first:
+      213: -2993106260020711038
+    second: VaultWallTile_36
+  - first:
+      213: -4436041999007800451
+    second: VaultWallTile_37
+  - first:
+      213: 5471059346234750632
+    second: VaultWallTile_38
+  - first:
+      213: 8427712382866110198
+    second: VaultWallTile_39
+  - first:
+      213: 8242564288467330942
+    second: VaultWallTile_40
+  - first:
+      213: -6206904969011872254
+    second: VaultWallTile_41
+  - first:
+      213: -445422991057564299
+    second: VaultWallTile_42
+  - first:
+      213: -7323874712370617227
+    second: VaultWallTile_43
+  - first:
+      213: -5194317392752994319
+    second: VaultWallTile_44
+  - first:
+      213: 6212465220458101919
+    second: VaultWallTile_45
+  - first:
+      213: -4251041297102483931
+    second: VaultWallTile_46
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VaultWallTile_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 328
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9464279f62025e0800000000000000
+      internalID: -1936504986963392026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 328
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce904f468e578a00800000000000000
+      internalID: 758678993183481541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 328
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a3fe2e63341baa0800000000000000
+      internalID: -6147058113369392625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 328
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eba551ba7d064680800000000000000
+      internalID: -8771308403645109280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1e9c677f39f5130800000000000000
+      internalID: 3557724921705128377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f22b0d71ac60a220800000000000000
+      internalID: 2495113634406671097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb910dca9437bc80800000000000000
+      internalID: -8307113148192547842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b0352061b733d60800000000000000
+      internalID: 7868768308404882252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14edf8ade6e6ae720800000000000000
+      internalID: 2876232734421802561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47a5b100f3eb8570800000000000000
+      internalID: 8470114144160687946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_10
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40475683fc063860800000000000000
+      internalID: 7509203668757332045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_11
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a895ad8dc55c4b700800000000000000
+      internalID: 555285656639265162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 264
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5027efa41c8da5070800000000000000
+      internalID: 8096021604850364933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 264
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719112470ec1cc280800000000000000
+      internalID: -9021804203183367913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 264
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c66f2f953b70aa50800000000000000
+      internalID: 6530354929921386178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 264
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a947115d85ed047d0800000000000000
+      internalID: -2936102483932384102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 232
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c1a1f11d2ae43b0800000000000000
+      internalID: -5526300673683350440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 232
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003b95fd5b38cc5d0800000000000000
+      internalID: -3040910831222410496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 232
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbcf32152903f5f0800000000000000
+      internalID: -724225060251907081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 232
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390bece0b4ddc66e0800000000000000
+      internalID: -1842854833060663149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd70a3b7cebdb130800000000000000
+      internalID: 3584230643378191794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42e683f14f547830800000000000000
+      internalID: 4067981100285616718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6d520ee2526aa70800000000000000
+      internalID: 8837792202020476667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80757b40333505d10800000000000000
+      internalID: 2112279703824324360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3ca6b6a026107a0800000000000000
+      internalID: -6412736597507521600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_25
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524c56a6d0a2481d0800000000000000
+      internalID: -3349505985748810715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_26
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: af277fe10c55e7230800000000000000
+      internalID: 3638439832603554554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_27
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abfca5b5591dabd0800000000000000
+      internalID: -2617407952521462872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 168
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77af5395ab1ba1830800000000000000
+      internalID: 4042739029437184631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 168
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c8f3552f24a57a0800000000000000
+      internalID: -6387719512891880327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 168
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148148db4d7ea1460800000000000000
+      internalID: 7213332654085904449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_31
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 168
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c4dfc5ea002c8d0800000000000000
+      internalID: -2827696867150836661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 104
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4249a38feed1bb0800000000000000
+      internalID: -4963548464390331208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 104
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140052abc859da0f0800000000000000
+      internalID: -1104061901984956351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 104
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a2c5da2175ae860800000000000000
+      internalID: 7559950662224325218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_35
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5aac1d65008c1270800000000000000
+      internalID: 8222587780465470043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281b774f6b95676d0800000000000000
+      internalID: -2993106260020711038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d732d681e430072c0800000000000000
+      internalID: -4436041999007800451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6376d0d7b1deb40800000000000000
+      internalID: 5471059346234750632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f635e1a2cf35f470800000000000000
+      internalID: 8427712382866110198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_40
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e776a64ac88736270800000000000000
+      internalID: 8242564288467330942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_41
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20eb077f0d4acd9a0800000000000000
+      internalID: -6206904969011872254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dc83b462a81d9f0800000000000000
+      internalID: -445422991057564299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_43
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574eeada0ce5c5a90800000000000000
+      internalID: -7323874712370617227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 40
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7135a1ad31ae7b0800000000000000
+      internalID: -5194317392752994319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 40
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cbfd4f33c173650800000000000000
+      internalID: 6212465220458101919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaultWallTile_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 40
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ec0b896744105c0800000000000000
+      internalID: -4251041297102483931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

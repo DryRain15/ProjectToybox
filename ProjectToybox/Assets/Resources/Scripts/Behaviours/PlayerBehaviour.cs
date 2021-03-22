@@ -1,56 +1,42 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IMovable, IDamaged
 {
+    public static PlayerBehaviour Instance;
+    
     private Vector3 _collisionPoint;
     private Animator _anim;
     private SpriteRenderer _sr;
     private IInteractableObject _currentItem;
     private IHoldable _currentHold;
-    
+    private float _velocityMultiplier = 1f;
+
+    private void Awake()
+    {
+        if(Instance != null) Destroy(gameObject);
+        else Instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         _anim = GetComponentInChildren<Animator>();
         _sr = GetComponentInChildren<SpriteRenderer>();
-        Stats = new Stats()
-        {
-            Hp = 10f,
-            HpGen = 0.1f,
-            Atk = 3f,
-            Fever = 1.3f,
-            MoveSpeed = 2f,
-        };
+        AnimState = AnimState.Stand;
+        HitType = HitType.Player;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        Velocity = new Vector3(GlobalInputController.Instance.hInput,
-            GlobalInputController.Instance.vInput * 0.5f) * Stats.MoveSpeed;
         MoveTo();
         FaceDirection();
 
         InputCheck();
-        
-        if (Direction != Direction.None)
-        {
-            var up = (Direction.Up & Direction) == Direction.Up;
-            var down = (Direction.Down & Direction) == Direction.Down;
-            var left = (Direction.Left & Direction) == Direction.Left;
-            var right = (Direction.Right & Direction) == Direction.Right;
-                
-            _anim.SetBool("IsUp", up);
-            _anim.SetBool("IsDown", down);
-            _anim.SetBool("IsLeft", left);
-            _anim.SetBool("IsRight", right);
-
-            _sr.flipX = right;
-        }
     }
 
     private void InputCheck()
@@ -111,7 +97,9 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         for (int i = 0; i < hits.Length; i++)
         {
             var tiio = hits[i].GetComponent<IInteractableObject>();
-            if (tiio != null && tiio.InteractState == InteractState.Interactable)
+            if (tiio != null && 
+                tiio.InteractState == InteractState.Interactable &&
+                _currentHold == null)
             {
                 var t_dist = Vector3.Distance(hits[i].transform.position, transform.position);
                 if (t_dist < dist && 
@@ -152,7 +140,10 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
     public Direction Direction { get; set; }
 
-    public Stats Stats { get; set; }
+    public AnimState AnimState { get; set; }
+
+    [SerializeField] private Stats stats;
+    public Stats Stats { get => stats; set => stats = value; }
 
     #endregion
 
@@ -162,6 +153,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     
     public GameObject GameObject { get => gameObject; }
     public Transform Transform { get => transform;}
+    public Transform GFXTransform { get => transform.GetChild(0); }
     public Vector3 Position
     {
         get => transform.position;
@@ -176,7 +168,50 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     
     public void MoveTo()
     {
-        if (Velocity.magnitude < Mathf.Epsilon) return;
+        var singleDirectionMult = (GlobalInputController.Instance.hInput * GlobalInputController.Instance.vInput == 0)
+            ? Mathf.Sqrt(5) / 2
+            : 1; 
+        Velocity = new Vector3(GlobalInputController.Instance.hInput,
+            GlobalInputController.Instance.vInput * 0.5f) * (singleDirectionMult * Stats.moveSpeed);
+
+        Velocity *= _velocityMultiplier;
+
+        if (GlobalInputController.Instance.dashKeyDown)
+        {
+            var isDashing = _velocityMultiplier > 1f;
+            if (!isDashing) {
+                var core = DOTween.To(() => _velocityMultiplier, x => _velocityMultiplier = x, 3f, .15f);
+                core.SetTarget(_velocityMultiplier);
+                core.SetEase(Ease.OutExpo);
+                core.OnComplete(() =>
+                {
+                    _velocityMultiplier = 1f;
+                });
+            }
+        }
+
+        _anim.ResetTrigger("ActionStateOnChange");
+        var prevAnim = AnimState;
+        if (_currentHold != null)
+        {
+            if (Velocity.magnitude < Mathf.Epsilon)
+                AnimState = AnimState.Hold;
+            else
+                AnimState = AnimState.HoldMove;
+        }
+        else
+        {
+            if (Velocity.magnitude < Mathf.Epsilon)
+                AnimState = AnimState.Stand;
+            else
+                AnimState = AnimState.Move;
+        }
+        
+        _anim.SetInteger("ActionState", (int)AnimState);
+        if (prevAnim != AnimState)
+            _anim.SetTrigger("ActionStateOnChange");
+        if (AnimState == AnimState.Stand | 
+            AnimState == AnimState.Hold) return;
         
         var hit = Physics2D.Raycast(Position, 
             Velocity.normalized,
@@ -233,23 +268,39 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         {
             Direction = Direction | Direction.Up;
         }
-        
+
         if ((prevHDir | prevVDir) != Direction.None && Direction == Direction.None)
         {
             Direction = prevHDir | prevVDir;
             return;
         }
-        
+
         if (prevHDir != ((Direction.Left & Direction) | (Direction.Right & Direction)) ||
             prevVDir != ((Direction.Up & Direction) | (Direction.Down & Direction)))
             _anim.SetTrigger("DirectionOnChange");
+
+        if (Direction != Direction.None)
+        {
+            var up = Utils.DirectionContains(Direction, Direction.Up);
+            var down = Utils.DirectionContains(Direction, Direction.Down);
+            var left = Utils.DirectionContains(Direction, Direction.Left);
+            var right = Utils.DirectionContains(Direction, Direction.Right);
+
+            _anim.SetBool("IsUp", up);
+            _anim.SetBool("IsDown", down);
+            _anim.SetBool("IsLeft", left);
+            _anim.SetBool("IsRight", right);
+
+            _sr.flipX = right;
+        }
     }
 
     #endregion
-    
+
     #region IDamaged
 
-    public void GetHit()
+    public HitType HitType { get; set; }
+    public void GetHit(DamageState state)
     {
         
     }

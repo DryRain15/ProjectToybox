@@ -151,7 +151,7 @@ TextureImporter:
     second: FloorPreset_44
   - first:
       213: 6915812588141882044
-    second: FloorPreset_47
+    second: InvisibleWall
   - first:
       213: -3644898159667055547
     second: FloorPreset_50
@@ -1447,6 +1447,31 @@ TextureImporter:
       bones: []
       spriteID: 787f8f1e5b7f913c0800000000000000
       internalID: -4388204001343506553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InvisibleWall
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: 0, y: 0}
+        - {x: 16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba2f5948e6e9ff50800000000000000
+      internalID: 6915812588141882044
       vertices: []
       indices: 
       edges: []

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using Color = System.Drawing.Color;
 
 public static class Utils
 {
@@ -94,5 +95,120 @@ public static class Utils
                     break;
             }
         return newDir;
+    }
+
+    public static void DamageRedPulse(SpriteRenderer sr)
+    {
+        CoroutineManager.Instance.StartCoroutineCall(DamageRedPulseRoutine(sr));
+    }
+
+    static IEnumerator DamageRedPulseRoutine(SpriteRenderer sr, float duration = 0.5f)
+    {
+        var origin = sr.color;
+        var innerTimer = 0f;
+        while (innerTimer < duration / 2)
+        {
+            sr.color = UnityEngine.Color.Lerp(
+                UnityEngine.Color.white, UnityEngine.Color.red,
+                innerTimer / (duration / 2));
+            innerTimer += Time.deltaTime;
+            yield return null;   
+        }
+
+        innerTimer = 0f;
+        while (innerTimer < duration / 2)
+        {
+            sr.color = UnityEngine.Color.Lerp(
+                UnityEngine.Color.red, UnityEngine.Color.white,
+                innerTimer / (duration / 2));
+            innerTimer += Time.deltaTime;
+            yield return null;   
+        }
+
+        sr.color = origin;
+    }
+
+    public static KeyValuePair<string, object> EventParameterPairing(this string key, object value)
+    {
+        return new KeyValuePair<string, object>(key, value);
+    }
+
+    public static AudioSource CreateSource(this MonoBehaviour super, AudioClip clip)
+    {
+        var source = super.gameObject.AddComponent<AudioSource>();
+        source.clip = clip;
+        return source;
+    }
+
+    public static Direction ClampVectorToDirection(Vector3 velocity)
+    {
+        var norm = velocity.normalized;
+        Direction dir = Direction.None;
+        if (norm.x < -0.5f)
+            dir |= Direction.Left;
+        else if (norm.x > 0.5f)
+            dir |= Direction.Right;
+        if (norm.y < -0.5f)
+            dir |= Direction.Down;
+        else if (norm.y > 0.5f)
+            dir |= Direction.Up;
+
+        return dir;
+    }
+
+    public static Vector3 DirectionToVector(Direction direction)
+    {
+        var v = Vector3.zero;
+        if (DirectionContains(direction, Direction.Left)) v.x = -2f;
+        if (DirectionContains(direction, Direction.Right)) v.x = 2f;
+        if (DirectionContains(direction, Direction.Down)) v.y = -1f;
+        if (DirectionContains(direction, Direction.Up)) v.y = 1f;
+
+        return v;
+    }
+
+    public static bool IsHorizontal(Direction direction)
+    {
+        return !DirectionContains(direction, Direction.Down) && !DirectionContains(direction, Direction.Up);
+    }
+
+    public static bool IsVertical(Direction direction)
+    {
+        return !DirectionContains(direction, Direction.Left) && !DirectionContains(direction, Direction.Right);
+    }
+
+    public static bool TargetInRange(this IFieldObject fo, IFieldObject target, float range)
+    {
+        var center = fo.Position;
+        var a = range;
+        var b = range * 0.5f;
+        var point = target.Position;
+        
+        return Mathf.Pow(center.x - point.x, 2f) / (a * a) + Mathf.Pow(center.y - point.y, 2f) / (b * b) <= 1;
+    }
+
+    public static (float, float) DirectionToRange(this Direction direction)
+    {
+        switch (direction)
+        {
+            case Direction.Up:
+                return (1f, 0.132f);
+            case Direction.Up | Direction.Left:
+                return (0.25f, 1f);
+            case Direction.Left:
+                return (0.367f, 0.857f);
+            case Direction.Down | Direction.Left:
+                return (0.5f, 0.75f);
+            case Direction.Down:
+                return (0.637f, 0.637f);
+            case Direction.Down | Direction.Right:
+                return (0.75f, 0.5f);
+            case Direction.Right:
+                return (0.857f, 0.367f);
+            case Direction.Up | Direction.Right:
+                return (1f, 0.25f);
+        }
+
+        return (0f, 0f);
     }
 }

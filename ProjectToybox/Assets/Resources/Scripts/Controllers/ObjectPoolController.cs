@@ -12,7 +12,8 @@ namespace Proto
 
         private void Awake()
         {
-            Self = this;
+            if(Self != null) Destroy(gameObject);
+            else Self = this;
             
             _poolList = new Dictionary<string, ObjectPool>();
 

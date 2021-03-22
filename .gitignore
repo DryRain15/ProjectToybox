@@ -62,3 +62,6 @@ ProjectToybox/.idea
 ProjectToybox/Library
 ProjectToybox/Temp
 ProjectToybox/Logs
+*.cache
+.DS_Store
+**/obj/Debug/*

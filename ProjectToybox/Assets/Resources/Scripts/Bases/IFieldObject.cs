@@ -8,5 +8,6 @@ public interface IFieldObject
     GameObject GameObject { get; }
     
     Transform Transform { get; }
+    Transform GFXTransform { get; }
     Vector3 Position { get; set; }
 }

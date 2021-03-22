@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 public enum KeyType
@@ -13,14 +15,24 @@ public enum KeyType
     Menu,
 }
 
+public enum InputType
+{
+    None,
+    WASD,
+    Arrow,
+    PointClick
+}
+
 public class GlobalInputController : MonoBehaviour
 {
     public static GlobalInputController Instance;
-    
+
     public float hInput;
     public float vInput;
 
     #region KeyAssign
+
+    public InputType InputType { get; set; } = InputType.None;
 
     public KeyCode UseKey { get; set; }
     public KeyCode CancelKey { get; set; }
@@ -29,7 +41,7 @@ public class GlobalInputController : MonoBehaviour
     public KeyCode MenuKey { get; set; }
 
     public KeyCode LastKey;
-    
+
     #endregion
 
     #region KeyDownEvent
@@ -41,7 +53,7 @@ public class GlobalInputController : MonoBehaviour
     public bool menuKeyDown;
 
     #endregion
-    
+
     #region KeyEvent
 
     public bool useKey;
@@ -64,7 +76,13 @@ public class GlobalInputController : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if(Instance != null) Destroy(gameObject);
+        else
+        {
+            Instance = this;
+            AssignDefault();
+        }
+        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update
@@ -72,6 +90,12 @@ public class GlobalInputController : MonoBehaviour
     {
         hInput = 0f;
         vInput = 0f;
+    }
+
+    private void AssignDefault()
+    {
+        Debug.Log("Assigning default key settings");
+        InputType = InputType.WASD;
         AssignKey(KeyType.Use, KeyCode.J);
         AssignKey(KeyType.Dash, KeyCode.L);
         AssignKey(KeyType.Cancel, KeyCode.K);
@@ -85,10 +109,32 @@ public class GlobalInputController : MonoBehaviour
         ResetKeyDown();
         ResetKeyRelease();
 
-        hInput = Input.GetAxisRaw("Horizontal");
-        vInput = Input.GetAxisRaw("Vertical");
-        hInput = Mathf.Abs(hInput) > 0.2f ? hInput : 0f;
-        vInput = Mathf.Abs(vInput) > 0.1f ? vInput : 0f;
+
+        hInput = 0f;
+        vInput = 0f;
+        foreach (var targetKey in GetKeyCodes(InputType))
+        {
+            if (Input.GetKey(targetKey))
+            {
+                var data = FindInputTypeWithIndex(targetKey);
+                switch (data.Value)
+                {
+                    case 0:
+                        vInput = 1f;
+                        break;
+                    case 1:
+                        hInput = -1f;
+                        break;
+                    case 2:
+                        vInput = -1f;
+                        break;
+                    case 3:
+                        hInput = 1f;
+                        break;
+
+                }
+            }
+        }
 
         if (CheckKeyAssigned(KeyType.Use))
         {
@@ -158,6 +204,14 @@ public class GlobalInputController : MonoBehaviour
                 menuKey = false;
                 menuKeyRelease = true;
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            EventParameter param = new EventParameter(
+                "SpaceKey".EventParameterPairing(true), 
+                "EnterKey".EventParameterPairing(true)); 
+            EventController.Instance.EventCall("DebugEvent", param);
         }
     }
 
@@ -238,7 +292,34 @@ public class GlobalInputController : MonoBehaviour
             Event.current.keyCode != KeyCode.None)
         {
             LastKey = Event.current.keyCode;
-            Debug.Log(LastKey);
+            // Debug.Log(LastKey);
         }
+    }
+
+    public static InputType FindInputType(KeyCode key)
+    {
+        return FindInputTypeWithIndex(key).Key;
+    }
+
+    public static KeyValuePair<InputType, int> FindInputTypeWithIndex(KeyCode key)
+    {
+        var wasd = new[] { KeyCode.W, KeyCode.A, KeyCode.S, KeyCode.D };
+        var arrow = new[] { KeyCode.UpArrow, KeyCode.LeftArrow, KeyCode.DownArrow, KeyCode.RightArrow };
+
+        if (wasd.Contains(key)) return new KeyValuePair<InputType, int>(InputType.WASD, ArrayUtility.IndexOf(wasd, key));
+        if (arrow.Contains(key)) return new KeyValuePair<InputType, int>(InputType.Arrow, ArrayUtility.IndexOf(arrow, key));
+        return new KeyValuePair<InputType, int>(InputType.None, -1);
+    }
+
+    public static KeyCode[] GetKeyCodes(InputType type)
+    {
+        var wasd = new[] { KeyCode.W, KeyCode.A, KeyCode.S, KeyCode.D };
+        var arrow = new[] { KeyCode.UpArrow, KeyCode.LeftArrow, KeyCode.DownArrow, KeyCode.RightArrow };
+        return type switch
+        {
+            InputType.WASD => wasd,
+            InputType.Arrow => arrow,
+            _ => new KeyCode[0]
+        };
     }
 }

@@ -1,12 +1,34 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class EventParameter
 {
     public Dictionary<string, object> Param;
+
+    public EventParameter(params KeyValuePair<string, object>[] dict)
+    {
+        Param = new Dictionary<string, object>();
+        foreach (var pair in dict)
+        {
+            Param.Add(pair.Key, pair.Value);
+        }
+    }
+
+    public object this[string key]
+    {
+        get => Param[key];
+        set => Param[key] = value;
+    }
+
+    [CanBeNull]
+    public T Get<T>(string key)
+    {
+        return this[key] is T ? (T)this[key] : default;
+    }
 }
 
 public class EventController : MonoBehaviour
@@ -17,7 +39,8 @@ public class EventController : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if(Instance != null) Destroy(gameObject);
+         else Instance = this;
         
         Events = new Dictionary<string, UnityEvent<EventParameter>>();
     }
