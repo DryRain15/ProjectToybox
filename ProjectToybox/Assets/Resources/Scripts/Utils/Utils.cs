@@ -133,6 +133,13 @@ public static class Utils
         return new KeyValuePair<string, object>(key, value);
     }
 
+    public static AudioSource CreateSource(this MonoBehaviour super, AudioClip clip)
+    {
+        var source = super.gameObject.AddComponent<AudioSource>();
+        source.clip = clip;
+        return source;
+    }
+
     public static Direction ClampVectorToDirection(Vector3 velocity)
     {
         var norm = velocity.normalized;

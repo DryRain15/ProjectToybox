@@ -3,6 +3,7 @@ using DG.Tweening;
 using DG.Tweening.Plugins.Options;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Phase1 : MonoBehaviour
 {
@@ -14,8 +15,7 @@ public class Phase1 : MonoBehaviour
 
     private void Awake()
     {
-        alarmSource = gameObject.AddComponent<AudioSource>();
-        alarmSource.clip = alarmClip;
+        alarmSource = this.CreateSource(alarmClip);
         alarmSource.Play();
         alarmSource.volume = 0f;
         alarmSource.DOFade(1f, PHASE_TIME);
@@ -54,7 +54,7 @@ public class Phase1 : MonoBehaviour
 
     private void NextPhase()
     {
-        Debug.Log("next phase");
+        SceneManager.LoadSceneAsync("Scenes/Phase2");
     }
 
 }
