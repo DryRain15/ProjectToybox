@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public enum KeyType
@@ -13,6 +14,14 @@ public enum KeyType
     Menu,
 }
 
+public enum InputType
+{
+    None,
+    WASD,
+    Arrow,
+    PointClick
+}
+
 public class GlobalInputController : MonoBehaviour
 {
     public static GlobalInputController Instance;
@@ -21,6 +30,8 @@ public class GlobalInputController : MonoBehaviour
     public float vInput;
 
     #region KeyAssign
+
+    public InputType InputType { get; set; }
 
     public KeyCode UseKey { get; set; }
     public KeyCode CancelKey { get; set; }
@@ -66,6 +77,7 @@ public class GlobalInputController : MonoBehaviour
     {
         if(Instance != null) Destroy(gameObject);
         else Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update
@@ -73,7 +85,8 @@ public class GlobalInputController : MonoBehaviour
     {
         hInput = 0f;
         vInput = 0f;
-        AssignKey(KeyType.Use, KeyCode.J);
+        InputType = InputType.None;
+        // AssignKey(KeyType.Use, KeyCode.J);
         AssignKey(KeyType.Dash, KeyCode.L);
         AssignKey(KeyType.Cancel, KeyCode.K);
         AssignKey(KeyType.Debug, KeyCode.Tab);
@@ -249,5 +262,15 @@ public class GlobalInputController : MonoBehaviour
             LastKey = Event.current.keyCode;
             // Debug.Log(LastKey);
         }
+    }
+
+    public static InputType FindInputType(KeyCode key)
+    {
+        var wasd = new[] { KeyCode.W, KeyCode.A, KeyCode.S, KeyCode.D };
+        var arrow = new[] { KeyCode.UpArrow, KeyCode.LeftArrow, KeyCode.DownArrow, KeyCode.RightArrow };
+
+        if (wasd.Contains(key)) return InputType.WASD;
+        if (arrow.Contains(key)) return InputType.Arrow;
+        return InputType.None;
     }
 }

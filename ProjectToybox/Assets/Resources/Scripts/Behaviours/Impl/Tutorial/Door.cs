@@ -1,6 +1,7 @@
 using Proto.Behaviours;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Proto.Behaviours.Impl.Tutorial
 {
@@ -15,7 +16,8 @@ namespace Proto.Behaviours.Impl.Tutorial
 
         private void NextPhase()
         {
-            //TODO
+            //TODO: next to phase 3
+            // SceneManager.LoadSceneAsync("Phase3");
         }
     }
 
