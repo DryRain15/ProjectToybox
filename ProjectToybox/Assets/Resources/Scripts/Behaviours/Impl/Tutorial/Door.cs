@@ -8,6 +8,8 @@ namespace Proto.Behaviours.Impl.Tutorial
     public class Door : AbstractInteractableObject
     {
 
+        public string targetPhase;
+
         protected override void OnInteract(ICharacterObject interacted)
         {
             NextPhase();
@@ -16,7 +18,7 @@ namespace Proto.Behaviours.Impl.Tutorial
 
         private void NextPhase()
         {
-            SceneManager.LoadSceneAsync("Phase3");
+            SceneManager.LoadSceneAsync(targetPhase);
         }
     }
 

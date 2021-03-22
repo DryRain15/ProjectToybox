@@ -9,23 +9,29 @@ public class Phase3 : MonoBehaviour
 {
 
     public Transform respawnLocation;
-    private BoxCollider2D triggerArea;
 
     private void Start()
     {
-        triggerArea = GetComponent<BoxCollider2D>();
         GlobalInputController.Instance.AssignKey(KeyType.Dash, KeyCode.None);
-        Debug.Log("start start");
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnGUI()
     {
-        Debug.Log("collide enter");
+        var e = Event.current;
+        if (e.type != EventType.KeyDown) return;
+
+        var key = e.keyCode;
+        if (!Input.GetKeyDown(key))
+            return;
+        var pressedType = GlobalInputController.FindInputType(key);
+
+        if (GlobalInputController.Instance.CheckKeyAssigned(KeyType.Dash)) return;
+        if (pressedType != InputType.None) return; //누른키가 none(이동키가 아니어야만)
+        GlobalInputController.Instance.AssignKey(KeyType.Dash, key);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("collide exit");
         if (!GlobalInputController.Instance.CheckKeyAssigned(KeyType.Dash))
         {
             PlayerBehaviour.Instance.Position = respawnLocation.position;
