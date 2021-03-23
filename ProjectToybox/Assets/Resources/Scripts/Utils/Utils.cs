@@ -97,9 +97,9 @@ public static class Utils
         return newDir;
     }
 
-    public static void DamageRedPulse(SpriteRenderer sr)
+    public static void DamageRedPulse(SpriteRenderer sr, float duration = 0.5f)
     {
-        CoroutineManager.Instance.StartCoroutineCall(DamageRedPulseRoutine(sr));
+        CoroutineManager.Instance.StartCoroutineCall(DamageRedPulseRoutine(sr, duration));
     }
 
     static IEnumerator DamageRedPulseRoutine(SpriteRenderer sr, float duration = 0.5f)

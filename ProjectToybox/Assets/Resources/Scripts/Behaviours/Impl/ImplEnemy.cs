@@ -252,7 +252,14 @@ namespace Proto.Behaviours.Impl
         private void OnActionStateUpdate()
         {
             if (innerTimer > 1f)
+            {
                 InteractState = InteractState.EndInteract;
+                if (_showRange != null)
+                {
+                    _showRange.Dispose();
+                    _showRange = null;
+                }
+            }
             var yVelocity = 2.5f - 2.5f * (innerTimer / 0.5f);
             Transform.GetChild(0).localPosition += new Vector3(0f, 1f, 2f) * (yVelocity * Time.deltaTime);
         }
@@ -266,22 +273,30 @@ namespace Proto.Behaviours.Impl
             {
                 innerTimer = 0f;
                 InteractState = InteractState.OnAction;
-                if (_showRange == null)
+                if (_showRange != null)
                 {
-                    _showRange = ObjectPoolController.Self.Instantiate("RadialFX",
-                        new PoolParameters(transform.position));
-                    var (x, y) = Direction.DirectionToRange();
-                    if (Direction == Direction.Up)
-                        _showRange.gameObject.GetComponent<RadialFX>()
-                            .Initialize(x, y, Color.red, 2f, y);
-                    else
-                        _showRange.gameObject.GetComponent<RadialFX>().Initialize(
-                            x, y, Color.red, 2f);
+                    _showRange.Dispose();
+                    _showRange = null;
                 }
+                _showRange = ObjectPoolController.Self.Instantiate("RadialFX",
+                    new PoolParameters(transform.position));
+                var (x, y) = Direction.DirectionToRange();
+                if (Direction == Direction.Up)
+                    _showRange.gameObject.GetComponent<RadialFX>()
+                        .Initialize(x, y, Color.red, 2f, y);
+                else
+                    _showRange.gameObject.GetComponent<RadialFX>().Initialize(
+                        x, y, Color.red, 2f);
+                
                 return;
             }
             if (InteractState == InteractState.Interactable)
             {
+                if (_showRange != null)
+                {
+                    _showRange.Dispose();
+                    _showRange = null;
+                }
                 innerTimer = 0f;
                 InteractState = InteractState.OnAction;
                 return;
@@ -297,9 +312,11 @@ namespace Proto.Behaviours.Impl
         public void GetHit(DamageState state)
         {
             if (InteractState == InteractState.OnAction) return;
-            Utils.DamageRedPulse(spriteRenderer);
+            Utils.DamageRedPulse(spriteRenderer, 0.3f);
             Interact(state.Sender);
+#if UNITY_EDITOR
             Debug.Log(string.Format($"{state.Damage}damage dealt from {state.Sender} to {state.Getter}"));
+#endif
 
             var param = new EventParameter(
                 "BattleGroup".EventParameterPairing(BattleGroup),

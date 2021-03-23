@@ -89,7 +89,7 @@ namespace Proto.Behaviours
 
         private void OnActionStateUpdate()
         {
-            if (innerTimer < 0.1f)
+            if (innerTimer < 0.05f)
             {
                 var initPos = Utils.GetAngularOffset(
                     Utils.RotateDirectionCW(Holder.Direction, 2), 0.5f) + Vector3.up * 0.75f;
@@ -98,23 +98,23 @@ namespace Proto.Behaviours
 
                 transform.localPosition = Vector3.Lerp(initPos, endPos, innerTimer / 0.1f);
             }
-            else if (innerTimer < 0.2f)
+            else if (innerTimer < 0.08f)
             {
                 var initPos = Utils.GetAngularOffset(
                     Utils.RotateDirectionCW(Holder.Direction, 1), 0.5f) + Vector3.up * 0.6f;
-                var endPos = Utils.GetAngularOffset(Holder.Direction, 0.5f) + Vector3.up * 0.45f;
+                var endPos = Utils.GetAngularOffset(Holder.Direction, 0.5f) + Vector3.up * 0.35f;
 
                 transform.localPosition = Vector3.Lerp(initPos, endPos, (innerTimer - 0.1f) / 0.1f);
             }
-            else if (innerTimer < 0.3f)
+            else if (innerTimer < 0.13f)
             {
-                var initPos = Utils.GetAngularOffset(Holder.Direction, 0.5f) + Vector3.up * 0.45f;
+                var initPos = Utils.GetAngularOffset(Holder.Direction, 0.5f) + Vector3.up * 0.35f;
                 var endPos = Utils.GetAngularOffset(
-                    Utils.RotateDirectionCCW(Holder.Direction, 1), 0.5f) + Vector3.up * 0.3f;
+                    Utils.RotateDirectionCCW(Holder.Direction, 1), 0.5f) + Vector3.up * 0.15f;
 
                 transform.localPosition = Vector3.Lerp(initPos, endPos, (innerTimer - 0.2f) / 0.1f);
             }
-            else
+            else if (innerTimer > 0.3f)
             {
                 HoldState = HoldState.Holding;
             }
