@@ -77,7 +77,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     // Update is called once per frame
     void Update()
     {
-        if (_currentHold != null)
+        if (currentHold != null)
             HoldCheck();
         
         if (!GlobalInputController.Instance.GetControl)
@@ -98,7 +98,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
     private void HoldCheck()
     {
-        if (_currentHold.HoldState == HoldState.EndAction)
+        if (currentHold.HoldState == HoldState.EndAction)
         {
             Debug.LogError("state change");
             AnimState = AnimState.Hold;
