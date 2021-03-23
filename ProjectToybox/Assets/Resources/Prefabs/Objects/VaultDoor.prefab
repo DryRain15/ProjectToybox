@@ -129,6 +129,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: f1903a322c8e72e4c8fdcf8d85567ba5, type: 2}
+  sprites:
+  - {fileID: 3765714084555416546, guid: 2e20b594108c70247883802a18d08ad2, type: 3}
+  - {fileID: -3831065960925740927, guid: 2e20b594108c70247883802a18d08ad2, type: 3}
+  offset: {x: 0, y: 0}
+  targetPhase: 
 --- !u!60 &1199023061
 PolygonCollider2D:
   m_ObjectHideFlags: 0

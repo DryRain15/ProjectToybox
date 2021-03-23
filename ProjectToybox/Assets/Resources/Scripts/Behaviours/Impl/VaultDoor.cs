@@ -33,16 +33,15 @@ namespace Proto.Behaviours.Impl
                 toDoor = true;
             else
                 toDoor = false;
+
+            if (!toDoor) yield break;
             
             SetSprite(1);
-            yield return ScreenUIController.Instance.ScreenFadeCall(Color.black, toDoor ? 0.5f : 1f);
+            yield return ScreenUIController.Instance.ScreenFadeCall(Color.black, 1);
             
-            if (toDoor)
-            {
-                GetToDoor(target);
-                yield return ScreenUIController.Instance.ScreenFadeCall(new Color(0, 0, 0, 0), toDoor ? 0.5f : 1f);
-                GlobalInputController.Instance.RestoreControl();
-            }
+            GetToDoor(target);
+            yield return ScreenUIController.Instance.ScreenFadeCall(new Color(0, 0, 0, 0), 1);
+            GlobalInputController.Instance.RestoreControl();
 
             InteractState = InteractState.EndInteract;
         }
