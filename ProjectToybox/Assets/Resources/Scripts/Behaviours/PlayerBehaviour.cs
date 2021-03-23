@@ -19,6 +19,8 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     private float _velocityMultiplier = 1f;
     private float _innerTimer = 0f;
 
+    private bool isSceneLoaded = false;
+
     private void Awake()
     {
         if(Instance != null) Destroy(gameObject);
@@ -38,6 +40,12 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         
         EventController.Instance.Subscribe("ZoneEnterEvent", ZoneEnterTest);
         EventController.Instance.Subscribe("ZoneExitEvent", ZoneExitTest);
+
+        if (isSceneLoaded)
+        {
+            ScreenUIController.Instance.ScreenFadeCall(new Color(0, 0, 0, 0), 1f);
+            GlobalInputController.Instance.RestoreControl();
+        }
     }
 
     void ZoneEnterTest(EventParameter param)
@@ -80,8 +88,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
     private void OnsceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
-        ScreenUIController.Instance.ScreenFadeCall(new Color(0, 0, 0, 0), 1f);
-        GlobalInputController.Instance.RestoreControl();
+        isSceneLoaded = true;
     }
 
     private void InputCheck()
@@ -268,7 +275,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         
         var hit = Physics2D.Raycast(Position, 
             Velocity.normalized,
-            Mathf.Max(Velocity.magnitude * Time.deltaTime, 0.3f), 1 << 8);
+            Mathf.Max(Velocity.magnitude * Time.deltaTime, 0.3f), 1 << 8 | 1 << 9);
         if (hit)
         {
             _collisionPoint = hit.point;
