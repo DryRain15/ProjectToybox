@@ -1,7 +1,289 @@
 fileFormatVersion: 2
-guid: bfb1a6d7a97e50e47b0150ea91d187bf
+guid: e53ad3172af5a564cadcd8f8affcab31
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3550165510009707341
+    second: OfficeFloorTile_0
+  - first:
+      213: 7357140942805834474
+    second: OfficeFloorTile_1
+  - first:
+      213: -4047555071204707023
+    second: OfficeFloorTile_2
+  - first:
+      213: 243569139049601183
+    second: OfficeFloorTile_3
+  - first:
+      213: -4636667416263078616
+    second: OfficeFloorTile_4
+  - first:
+      213: -6865028054595784659
+    second: OfficeFloorTile_5
+  - first:
+      213: 79492552023903239
+    second: OfficeFloorTile_6
+  - first:
+      213: 3230865980287075366
+    second: OfficeFloorTile_7
+  - first:
+      213: -865795277834127641
+    second: OfficeFloorTile_8
+  - first:
+      213: -1186961815457311875
+    second: OfficeFloorTile_9
+  - first:
+      213: 3893025079162519231
+    second: OfficeFloorTile_10
+  - first:
+      213: 4004034407131911823
+    second: OfficeFloorTile_11
+  - first:
+      213: -8778446277184505027
+    second: OfficeFloorTile_12
+  - first:
+      213: 5548141409307998370
+    second: OfficeFloorTile_13
+  - first:
+      213: 5396235246908515898
+    second: OfficeFloorTile_14
+  - first:
+      213: 2401294279416823327
+    second: OfficeFloorTile_15
+  - first:
+      213: -2585501289188949057
+    second: OfficeFloorTile_16
+  - first:
+      213: 6051338234166901593
+    second: OfficeFloorTile_17
+  - first:
+      213: 7231234244089622610
+    second: OfficeFloorTile_18
+  - first:
+      213: 6539511198421628947
+    second: OfficeFloorTile_19
+  - first:
+      213: -1050031551705311727
+    second: OfficeFloorTile_20
+  - first:
+      213: -3157748185710859037
+    second: OfficeFloorTile_21
+  - first:
+      213: -5367696496995020619
+    second: OfficeFloorTile_22
+  - first:
+      213: -5185389453437042275
+    second: OfficeFloorTile_23
+  - first:
+      213: 1134301785285090231
+    second: OfficeFloorTile_24
+  - first:
+      213: -5167829719999770175
+    second: OfficeFloorTile_25
+  - first:
+      213: -7631998021378625256
+    second: OfficeFloorTile_26
+  - first:
+      213: 4677922914063877607
+    second: OfficeFloorTile_27
+  - first:
+      213: -8121965876646272552
+    second: OfficeFloorTile_28
+  - first:
+      213: -1247311264517546950
+    second: OfficeFloorTile_29
+  - first:
+      213: 1691084578676982785
+    second: OfficeFloorTile_30
+  - first:
+      213: -3196240905174826359
+    second: OfficeFloorTile_31
+  - first:
+      213: 5672809936788113887
+    second: OfficeFloorTile_32
+  - first:
+      213: 9137706373797032858
+    second: OfficeFloorTile_33
+  - first:
+      213: -8466530645416953538
+    second: OfficeFloorTile_34
+  - first:
+      213: 1842790818887256402
+    second: OfficeFloorTile_35
+  - first:
+      213: -1348949864267284724
+    second: OfficeFloorTile_36
+  - first:
+      213: 506800926285717069
+    second: OfficeFloorTile_37
+  - first:
+      213: -6508759693167019385
+    second: OfficeFloorTile_38
+  - first:
+      213: -1673091912731096673
+    second: OfficeFloorTile_39
+  - first:
+      213: 3256040862272732972
+    second: OfficeFloorTile_40
+  - first:
+      213: -4217749951107301180
+    second: OfficeFloorTile_41
+  - first:
+      213: 4614476463909993167
+    second: OfficeFloorTile_42
+  - first:
+      213: 6022797487677752590
+    second: OfficeFloorTile_43
+  - first:
+      213: 8397413907556521701
+    second: OfficeFloorTile_44
+  - first:
+      213: -2952740266867563572
+    second: OfficeFloorTile_45
+  - first:
+      213: 4668116468319656980
+    second: OfficeFloorTile_46
+  - first:
+      213: -7655662707442708101
+    second: RestrictedFloorTile_0
+  - first:
+      213: -6766239274902755748
+    second: RestrictedFloorTile_1
+  - first:
+      213: -2143451416315308848
+    second: RestrictedFloorTile_2
+  - first:
+      213: 5031620614391149440
+    second: RestrictedFloorTile_3
+  - first:
+      213: -2537206889786422390
+    second: RestrictedFloorTile_4
+  - first:
+      213: -2892249124885406942
+    second: RestrictedFloorTile_5
+  - first:
+      213: 6351500575857768558
+    second: RestrictedFloorTile_6
+  - first:
+      213: -7370701530713241241
+    second: RestrictedFloorTile_7
+  - first:
+      213: 7587239554885913360
+    second: RestrictedFloorTile_8
+  - first:
+      213: -5568585841249498382
+    second: RestrictedFloorTile_9
+  - first:
+      213: 4922490752385463070
+    second: RestrictedFloorTile_10
+  - first:
+      213: -3465305665713868038
+    second: RestrictedFloorTile_11
+  - first:
+      213: 3221533349781415056
+    second: RestrictedFloorTile_12
+  - first:
+      213: 8167332791425436479
+    second: RestrictedFloorTile_13
+  - first:
+      213: -3024711846024995079
+    second: RestrictedFloorTile_14
+  - first:
+      213: -1746934166462126372
+    second: RestrictedFloorTile_15
+  - first:
+      213: 815126297018431606
+    second: RestrictedFloorTile_16
+  - first:
+      213: 876178232369037066
+    second: RestrictedFloorTile_17
+  - first:
+      213: 3093016633196392611
+    second: RestrictedFloorTile_18
+  - first:
+      213: 5743774662019586141
+    second: RestrictedFloorTile_19
+  - first:
+      213: 5376683713467747876
+    second: RestrictedFloorTile_20
+  - first:
+      213: 108037570125392326
+    second: RestrictedFloorTile_21
+  - first:
+      213: -3727729167508036352
+    second: RestrictedFloorTile_22
+  - first:
+      213: 3585492325924096187
+    second: RestrictedFloorTile_23
+  - first:
+      213: 5756498698198235180
+    second: RestrictedFloorTile_24
+  - first:
+      213: -2012148755473666042
+    second: RestrictedFloorTile_25
+  - first:
+      213: -4074098078816134778
+    second: RestrictedFloorTile_26
+  - first:
+      213: 2356865281408763312
+    second: RestrictedFloorTile_27
+  - first:
+      213: 5484271126953219984
+    second: RestrictedFloorTile_28
+  - first:
+      213: -6182803524866183139
+    second: RestrictedFloorTile_29
+  - first:
+      213: 4117921087670540355
+    second: RestrictedFloorTile_30
+  - first:
+      213: 4388639629669827937
+    second: RestrictedFloorTile_31
+  - first:
+      213: 3554983785872481581
+    second: RestrictedFloorTile_32
+  - first:
+      213: 5953480731725569375
+    second: RestrictedFloorTile_33
+  - first:
+      213: -5226707625785438532
+    second: RestrictedFloorTile_34
+  - first:
+      213: 1334581119644047257
+    second: RestrictedFloorTile_35
+  - first:
+      213: -4054480949023815257
+    second: RestrictedFloorTile_36
+  - first:
+      213: 3908572654990243511
+    second: RestrictedFloorTile_37
+  - first:
+      213: -6023439065662055039
+    second: RestrictedFloorTile_38
+  - first:
+      213: -6822028207947793881
+    second: RestrictedFloorTile_39
+  - first:
+      213: -5281131292102420242
+    second: RestrictedFloorTile_40
+  - first:
+      213: 1374786706235145618
+    second: RestrictedFloorTile_41
+  - first:
+      213: 6689474838487729994
+    second: RestrictedFloorTile_42
+  - first:
+      213: 6487387058731189722
+    second: RestrictedFloorTile_43
+  - first:
+      213: 4666591808049074429
+    second: RestrictedFloorTile_44
+  - first:
+      213: -4970582465988491423
+    second: RestrictedFloorTile_45
+  - first:
+      213: 1352707900313044785
+    second: RestrictedFloorTile_46
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +314,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,12 +323,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +350,43 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +395,994 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RestrictedFloorTile_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 328
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b711caa345f91c590800000000000000
+      internalID: -7655662707442708101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 328
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56ef128a3d7912a0800000000000000
+      internalID: -6766239274902755748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 328
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4d7391b4ee042e0800000000000000
+      internalID: -2143451416315308848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 328
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08331554a48e3d540800000000000000
+      internalID: 5031620614391149440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b4b94c6c70accd0800000000000000
+      internalID: -2537206889786422390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b5545aebaacd7d0800000000000000
+      internalID: -2892249124885406942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68f0be3f10152850800000000000000
+      internalID: 6351500575857768558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769c86c620206b990800000000000000
+      internalID: -7370701530713241241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b84ce1d2a4b4960800000000000000
+      internalID: 7587239554885913360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2facd075ea868b2b0800000000000000
+      internalID: -5568585841249498382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_10
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13b4124243305440800000000000000
+      internalID: 4922490752385463070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_11
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 296
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2f9f46bd2c8efc0800000000000000
+      internalID: -3465305665713868038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 264
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094abc1638f25bc20800000000000000
+      internalID: 3221533349781415056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 264
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b0053c6e1385170800000000000000
+      internalID: 8167332791425436479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 264
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe93c50a901606d0800000000000000
+      internalID: -3024711846024995079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 264
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6280a91a4a1c7e0800000000000000
+      internalID: -1746934166462126372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 232
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678fcd46c09ef4b00800000000000000
+      internalID: 815126297018431606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 232
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f394cc57fc82c00800000000000000
+      internalID: 876178232369037066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 232
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0bb0a8d3a9cea20800000000000000
+      internalID: 3093016633196392611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 232
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58119f8f9cf5bf40800000000000000
+      internalID: 5743774662019586141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e8fdab951dd9a40800000000000000
+      internalID: 5376683713467747876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c968bdf893df7100800000000000000
+      internalID: 108037570125392326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00522df8212744cc0800000000000000
+      internalID: -3727729167508036352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8489f064a32c130800000000000000
+      internalID: 3585492325924096187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28ba18111133ef40800000000000000
+      internalID: 5756498698198235180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_25
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6007fb22e596314e0800000000000000
+      internalID: -2012148755473666042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_26
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68910100265e577c0800000000000000
+      internalID: -4074098078816134778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_27
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 200
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b502d97c7445b020800000000000000
+      internalID: 2356865281408763312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 168
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0975af5788b0c1c40800000000000000
+      internalID: 5484271126953219984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 168
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d107158b3f4423aa0800000000000000
+      internalID: -6182803524866183139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 168
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34851bb596bc52930800000000000000
+      internalID: 4117921087670540355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_31
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 168
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1650cadbd7497ec30800000000000000
+      internalID: 4388639629669827937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 104
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2dd33b0be6d55130800000000000000
+      internalID: 3554983785872481581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 104
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d92afbe230f9250800000000000000
+      internalID: 5953480731725569375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 104
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbecb3c4b110777b0800000000000000
+      internalID: -5226707625785438532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_35
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99793581572658210800000000000000
+      internalID: 1334581119644047257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9c8d4fe079bb7c0800000000000000
+      internalID: -4054480949023815257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6bf770f1a0e3630800000000000000
+      internalID: 3908572654990243511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d90055512786ca0800000000000000
+      internalID: -6023439065662055039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ab3915d794351a0800000000000000
+      internalID: -6822028207947793881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_40
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8190a0217a5b6b0800000000000000
+      internalID: -5281131292102420242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_41
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d3313b939341310800000000000000
+      internalID: 1374786706235145618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4789f95ce9c5dc50800000000000000
+      internalID: 6689474838487729994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_43
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 72
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad583248824d70a50800000000000000
+      internalID: 6487387058731189722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 40
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df05386568013c040800000000000000
+      internalID: 4666591808049074429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 40
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16788fb1591f40bb0800000000000000
+      internalID: -4970582465988491423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RestrictedFloorTile_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 40
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137060b1ba8c5c210800000000000000
+      internalID: 1352707900313044785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
