@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class DamageTextFX : PooledFX
 {
-    private float yOffset;
     [SerializeField] private Text txt;
     [SerializeField] private Image mark;
 
@@ -43,9 +42,5 @@ public class DamageTextFX : PooledFX
         _duration = duration;
         _innerTimer = -_duration;
         _velocity = new Vector2((Random.value - 0.5f) * 3f, 4f);
-    }
-    public void Dispose()
-    {
-        ObjectPoolController.Self.Dispose(this);
     }
 }
