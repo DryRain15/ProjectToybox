@@ -312,6 +312,14 @@ namespace Proto.Behaviours.Impl
         public void GetHit(DamageState state)
         {
             if (InteractState == InteractState.OnAction) return;
+            CurrentHP -= state.Damage;
+            
+            var bar = ObjectPoolController.Self.Instantiate("UIBarFX", new PoolParameters(Position)) as UIBarFX;
+            bar.Initialize(transform, 0, CurrentHP / Stats.hpMax, 0.5f);
+
+            var tfx = ObjectPoolController.Self.Instantiate("DamageTextFX", new PoolParameters(Position)) as DamageTextFX;
+            tfx.Initialize(string.Format($"{state.Damage}"), false, 0.5f);
+
             Utils.DamageRedPulse(spriteRenderer, 0.3f);
             Interact(state.Sender);
 #if UNITY_EDITOR
