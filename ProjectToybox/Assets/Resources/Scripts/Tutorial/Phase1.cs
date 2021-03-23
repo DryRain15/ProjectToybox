@@ -13,7 +13,7 @@ public class Phase1 : MonoBehaviour
     public AudioClip alarmClip;
     private AudioSource alarmSource;
 
-    private void Awake()
+    private void Start()
     {
         alarmSource = this.CreateSource(alarmClip);
         alarmSource.Play();
@@ -36,6 +36,8 @@ public class Phase1 : MonoBehaviour
             return;
         }
 
+        Debug.Log("any keydcow");
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             ExitGame();
@@ -54,7 +56,7 @@ public class Phase1 : MonoBehaviour
 
     private void NextPhase()
     {
-        SceneManager.LoadSceneAsync("Scenes/Phase2");
+        SceneManager.LoadScene("Scenes/Phase2");
     }
 
 }

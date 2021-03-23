@@ -13,6 +13,7 @@ public class Phase3 : MonoBehaviour
     private void Start()
     {
         GlobalInputController.Instance.AssignKey(KeyType.Dash, KeyCode.None);
+        EventController.Instance.Subscribe("ZoneExitEvent", OnDashZoneExit);
     }
 
     private void OnGUI()
@@ -30,8 +31,9 @@ public class Phase3 : MonoBehaviour
         GlobalInputController.Instance.AssignKey(KeyType.Dash, key);
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnDashZoneExit(EventParameter param)
     {
+        if (param.Get<string>("Name") != "DashZone") return;
         if (!GlobalInputController.Instance.CheckKeyAssigned(KeyType.Dash))
         {
             PlayerBehaviour.Instance.Position = respawnLocation.position;

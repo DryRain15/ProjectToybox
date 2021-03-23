@@ -39,7 +39,7 @@ namespace Proto.Behaviours
             AnimState = AnimState.Stand;
             Direction = Direction.Down | Direction.Right;
             innerTimer = 0f;
-            CurrentHP = stats.hpMax;
+            CurrentHP = stats != null ? stats.hpMax : 0f;
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
             FieldObjectController.FOs.Add(Name, this);
         }
