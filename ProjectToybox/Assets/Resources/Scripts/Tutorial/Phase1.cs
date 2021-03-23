@@ -57,6 +57,7 @@ public class Phase1 : MonoBehaviour
     private void NextPhase()
     {
         SceneManager.LoadScene("Scenes/Phase2");
+        CoroutineManager.Instance.StopCoroutineCall(PhaseOver());
     }
 
 }

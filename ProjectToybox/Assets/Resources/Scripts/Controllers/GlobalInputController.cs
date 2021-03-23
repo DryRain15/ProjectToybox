@@ -93,7 +93,6 @@ public class GlobalInputController : MonoBehaviour
         else
         {
             Instance = this;
-            AssignDefault();
         }
         DontDestroyOnLoad(gameObject);
     }
