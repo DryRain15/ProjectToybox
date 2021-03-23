@@ -26,6 +26,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     // Start is called before the first frame update
     void Start()
     {
+        FieldObjectController.FOs.Add(Name, this);
         _anim = GetComponentInChildren<Animator>();
         _sr = GetComponentInChildren<SpriteRenderer>();
         AnimState = AnimState.Stand;
@@ -183,7 +184,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
     #region IFieldObject
     
-    public string Name { get; set; }
+    public string Name { get => gameObject.name; set => gameObject.name = value; }
     
     public GameObject GameObject { get => gameObject; }
     public Transform Transform { get => transform;}

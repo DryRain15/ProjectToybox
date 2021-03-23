@@ -11,7 +11,7 @@ namespace Proto.Behaviours
 
         #region IFieldObject
 
-        public string Name { get; set; }
+        public string Name { get => gameObject.name; set => gameObject.name = value; }
         public GameObject GameObject => gameObject;
         public Transform Transform => transform;
         public Transform GFXTransform => transform.GetChild(0);
@@ -39,6 +39,7 @@ namespace Proto.Behaviours
             Direction = Direction.Down | Direction.Right;
             innerTimer = 0f;
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+            FieldObjectController.FOs.Add(Name, this);
         }
 
         public virtual void Update()
