@@ -211,4 +211,9 @@ public static class Utils
 
         return (0f, 0f);
     }
+
+    public static void SetPosition(this ICharacterObject fo, Vector3 pos)
+    {
+        fo.Transform.position = new Vector3(pos.x, pos.y, fo.Transform.position.z);
+    }
 }
