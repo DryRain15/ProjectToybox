@@ -32,9 +32,9 @@ public class ScreenUIController : MonoBehaviour
         ScreenFadeCall(new Color(0, 0, 0, 0), 1f);
     }
 
-    public void ScreenFadeCall(Color color, float duration)
+    public Coroutine ScreenFadeCall(Color color, float duration)
     {
-        CoroutineManager.Instance.StartCoroutineCall(ScreenFadeRoutine(_fade.color, color, duration));
+        return CoroutineManager.Instance.StartCoroutineCall(ScreenFadeRoutine(_fade.color, color, duration));
     }
 
     private IEnumerator ScreenFadeRoutine(Color from, Color to, float duration)
