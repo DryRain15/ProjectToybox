@@ -9,6 +9,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 {
     public static PlayerBehaviour Instance;
     
+    public float CurrentHP { get; set; }
     private Vector3 _collisionPoint;
     private Animator _anim;
     private SpriteRenderer _sr;
@@ -31,6 +32,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         _sr = GetComponentInChildren<SpriteRenderer>();
         AnimState = AnimState.Stand;
         HitType = HitType.Player;
+        CurrentHP = stats.hpMax;
         
         EventController.Instance.Subscribe("ZoneEnterEvent", ZoneEnterTest);
         EventController.Instance.Subscribe("ZoneExitEvent", ZoneExitTest);

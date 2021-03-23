@@ -18,6 +18,7 @@ public enum AnimState
 
 public interface ICharacterObject
 {
+    float CurrentHP { get; set; }
     GameObject GameObject { get; }
     Direction Direction { get; set; }
     AnimState AnimState { get; set; }

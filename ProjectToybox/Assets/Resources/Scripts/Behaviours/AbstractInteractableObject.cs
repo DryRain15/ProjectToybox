@@ -8,6 +8,7 @@ namespace Proto.Behaviours
         private IPooledObject _interactableFX;
         protected SpriteRenderer spriteRenderer;
         protected float innerTimer;
+        public float CurrentHP { get; set; }
 
         #region IFieldObject
 
@@ -38,6 +39,7 @@ namespace Proto.Behaviours
             AnimState = AnimState.Stand;
             Direction = Direction.Down | Direction.Right;
             innerTimer = 0f;
+            CurrentHP = stats.hpMax;
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
             FieldObjectController.FOs.Add(Name, this);
         }

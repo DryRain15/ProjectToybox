@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd7e7b8fea28984ea4cb4b411658acb, type: 3}
   m_Name: TestEnemyStats
   m_EditorClassIdentifier: 
-  hp: 5
+  hpMax: 5
   hpGen: 0.1
   atk: 1
   fever: 1

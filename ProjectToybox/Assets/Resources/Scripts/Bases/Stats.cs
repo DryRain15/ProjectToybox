@@ -9,7 +9,7 @@ using UnityEngine;
 public class Stats : ScriptableObject
 {
     [SerializeField]
-    public float hp = 10f;
+    public float hpMax = 10f;
     [SerializeField]
     public float hpGen = 0.5f;
     [SerializeField]

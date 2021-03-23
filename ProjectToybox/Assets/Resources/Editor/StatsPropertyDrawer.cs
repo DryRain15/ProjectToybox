@@ -36,7 +36,7 @@ public class StatsPropertyDrawer : PropertyDrawer
             var speedRect = new Rect(position.x, position.y + 104f, position.width, 20f);
             
             // Draw fields - passs GUIContent.none to each so they are drawn without labels
-            EditorGUI.PropertyField(hpRect, statProperty.FindProperty("hp"), new GUIContent("HP"), true);
+            EditorGUI.PropertyField(hpRect, statProperty.FindProperty("hpMax"), new GUIContent("HPMax"), true);
             EditorGUI.PropertyField(hpGenRect, statProperty.FindProperty("hpGen"), new GUIContent("HPGen"), true);
             EditorGUI.PropertyField(atkRect, statProperty.FindProperty("atk"), new GUIContent("Atk"), true);
             EditorGUI.PropertyField(feverRect, statProperty.FindProperty("fever"), new GUIContent("FeverMult"), true);
