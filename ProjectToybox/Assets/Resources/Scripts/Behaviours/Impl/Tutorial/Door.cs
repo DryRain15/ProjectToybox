@@ -9,6 +9,7 @@ namespace Proto.Behaviours.Impl.Tutorial
     public class Door : AbstractInteractableObject
     {
 
+        public Vector2 offset;
         public string targetPhase;
 
         protected override void OnInteract(ICharacterObject interacted)
@@ -46,7 +47,7 @@ namespace Proto.Behaviours.Impl.Tutorial
         
         private void GetToDoor(ICharacterObject target)
         {
-            target.SetPosition(FieldObjectController.FOs[targetPhase].Position);
+            target.SetPosition(FieldObjectController.FOs[targetPhase].Position + (Vector3)offset);
         }
     }
 
