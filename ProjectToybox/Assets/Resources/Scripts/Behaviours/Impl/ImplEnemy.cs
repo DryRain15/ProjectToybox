@@ -29,7 +29,7 @@ namespace Proto.Behaviours.Impl
             var spaceKey = param.Get<bool>("SpaceKey");
             if (spaceKey)
             {
-                Interact(FindObjectOfType<PlayerBehaviour>());
+                Interact(PlayerBehaviour.Instance);
             }
         }
 
