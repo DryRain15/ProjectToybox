@@ -100,7 +100,6 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     {
         if (currentHold.HoldState == HoldState.EndAction)
         {
-            Debug.LogError("state change");
             AnimState = AnimState.Hold;
             _anim.SetInteger("ActionState", (int)AnimState);
             _anim.SetTrigger("ActionStateOnChange");
