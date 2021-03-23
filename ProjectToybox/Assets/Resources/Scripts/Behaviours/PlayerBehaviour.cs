@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Proto;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IMovable, IDamaged
 {
@@ -22,6 +23,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     {
         if(Instance != null) Destroy(gameObject);
         else Instance = this;
+        SceneManager.sceneLoaded += OnsceneLoaded;
     }
 
     // Start is called before the first frame update
@@ -74,6 +76,12 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         
         
         _innerTimer += Time.deltaTime;
+    }
+
+    private void OnsceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        ScreenUIController.Instance.ScreenFadeCall(new Color(0, 0, 0, 0), 1f);
+        GlobalInputController.Instance.RestoreControl();
     }
 
     private void InputCheck()

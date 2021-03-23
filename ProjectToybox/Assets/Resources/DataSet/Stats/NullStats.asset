@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cd7e7b8fea28984ea4cb4b411658acb, type: 3}
-  m_Name: EnemySecurityOffice
+  m_Name: NullStats
   m_EditorClassIdentifier: 
-  hpMax: 170
-  hpGen: 2
-  atk: 32
-  fever: 1.3
-  moveSpeed: 3
+  hpMax: 0
+  hpGen: 0
+  atk: 0
+  fever: 0
+  moveSpeed: 0

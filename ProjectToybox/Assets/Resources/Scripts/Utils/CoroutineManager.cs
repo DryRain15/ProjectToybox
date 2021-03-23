@@ -27,9 +27,9 @@ public class CoroutineManager : MonoBehaviour
         Debug.Log(string.Format($"{Coroutines.Count} running coroutine"));
     }
 
-    public void StartCoroutineCall(IEnumerator coroutine)
+    public Coroutine StartCoroutineCall(IEnumerator coroutine)
     {
-        StartCoroutine(StartCoroutineCallRoutine(coroutine));
+        return StartCoroutine(StartCoroutineCallRoutine(coroutine));
     }
 
     private IEnumerator StartCoroutineCallRoutine(IEnumerator coroutine)
