@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Proto;
 using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IMovable, IDamaged
@@ -14,6 +15,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     private IInteractableObject _currentItem;
     private IHoldable _currentHold;
     private float _velocityMultiplier = 1f;
+    private float _innerTimer = 0f;
 
     private void Awake()
     {
@@ -28,6 +30,35 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         _sr = GetComponentInChildren<SpriteRenderer>();
         AnimState = AnimState.Stand;
         HitType = HitType.Player;
+        
+        EventController.Instance.Subscribe("ZoneEnterEvent", ZoneEnterTest);
+        EventController.Instance.Subscribe("ZoneExitEvent", ZoneExitTest);
+    }
+
+    void ZoneEnterTest(EventParameter param)
+    {
+        var zoneName = param.Get<string>("Name");
+        var target = param.Get<IFieldObject>("Target");
+        
+        Debug.Log(string.Format($"{target} has entered to {zoneName}"));
+    }
+
+    void ZoneExitTest(EventParameter param)
+    {
+        var zoneName = param.Get<string>("Name");
+        var target = param.Get<IFieldObject>("Target");
+        
+        Debug.Log(string.Format($"{target} has left from {zoneName}"));
+    }
+
+    public Sprite GetCurrentSprite()
+    {
+        return _sr.sprite;
+    }
+
+    public bool IsFlipped()
+    {
+        return _sr.flipX;
     }
 
     // Update is called once per frame
@@ -37,6 +68,9 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         FaceDirection();
 
         InputCheck();
+        
+        
+        _innerTimer += Time.deltaTime;
     }
 
     private void InputCheck()
@@ -176,9 +210,17 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
         Velocity *= _velocityMultiplier;
 
+        var isDashing = _velocityMultiplier > 1f;
+        if (isDashing && _innerTimer > 0.05f)
+        {
+            _innerTimer = 0f;
+            PooledFX dashFx = ObjectPoolController.Self.Instantiate("MirrorImageFX", 
+                new PoolParameters(Position)) as PooledFX;
+            dashFx.Initialize(0.3f);
+        }
+        
         if (GlobalInputController.Instance.dashKeyDown)
         {
-            var isDashing = _velocityMultiplier > 1f;
             if (!isDashing) {
                 var core = DOTween.To(() => _velocityMultiplier, x => _velocityMultiplier = x, 3f, .15f);
                 core.SetTarget(_velocityMultiplier);

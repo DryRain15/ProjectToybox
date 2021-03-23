@@ -16,7 +16,7 @@ namespace Proto
             set => _name = value;
         }
 
-        private void Update()
+        public virtual void Update()
         {
             if (_duration > 0f)
             {
@@ -30,12 +30,12 @@ namespace Proto
         }
 
 
-        public void Dispose()
+        public virtual void Dispose()
         {
             ObjectPoolController.Self.Dispose(this);
         }
         
-        public void Initialize(float duration)
+        public virtual void Initialize(float duration)
         {
             _duration = duration;
         }
