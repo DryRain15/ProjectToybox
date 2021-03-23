@@ -1,148 +1,148 @@
 fileFormatVersion: 2
-guid: 14c3744198baf054392c195010d4f0c8
+guid: 6a6eaa7e1e825f14c843bab0075c2167
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1961899140801630395
-    second: OfficeFloorTilev2_0
+      213: 2064970911779736833
+    second: RestrictedWallTile_0
   - first:
-      213: 5345884214745541683
-    second: OfficeFloorTilev2_1
+      213: 5413821254187864179
+    second: RestrictedWallTile_1
   - first:
-      213: 4065952243114981267
-    second: OfficeFloorTilev2_2
+      213: 4232870779706849988
+    second: RestrictedWallTile_2
   - first:
-      213: 3389219614638991993
-    second: OfficeFloorTilev2_3
+      213: 1447044489227398926
+    second: RestrictedWallTile_3
   - first:
-      213: -4118107436072214033
-    second: OfficeFloorTilev2_4
+      213: 3772915841607681868
+    second: RestrictedWallTile_4
   - first:
-      213: 4696742740245170980
-    second: OfficeFloorTilev2_5
+      213: 463899953471634173
+    second: RestrictedWallTile_5
   - first:
-      213: 4894566913693275720
-    second: OfficeFloorTilev2_6
+      213: 6358730013944490778
+    second: RestrictedWallTile_6
   - first:
-      213: -5233609669255790735
-    second: OfficeFloorTilev2_7
+      213: -9133771249346072582
+    second: RestrictedWallTile_7
   - first:
-      213: 495842702785204444
-    second: OfficeFloorTilev2_8
+      213: -8552684086931400483
+    second: RestrictedWallTile_8
   - first:
-      213: 8326975841338167958
-    second: OfficeFloorTilev2_9
+      213: 3198759828648193879
+    second: RestrictedWallTile_9
   - first:
-      213: 6535041111970249556
-    second: OfficeFloorTilev2_10
+      213: 8185709786620221773
+    second: RestrictedWallTile_10
   - first:
-      213: -8738272930207519563
-    second: OfficeFloorTilev2_11
+      213: 4134391281552881376
+    second: RestrictedWallTile_11
   - first:
-      213: 4722443216017565790
-    second: OfficeFloorTilev2_12
+      213: 4867389732589865868
+    second: RestrictedWallTile_12
   - first:
-      213: 6075591292352828285
-    second: OfficeFloorTilev2_13
+      213: -5377571134869494726
+    second: RestrictedWallTile_13
   - first:
-      213: 4618679283531740773
-    second: OfficeFloorTilev2_14
+      213: -6536390454246085992
+    second: RestrictedWallTile_14
   - first:
-      213: 4402220774643539260
-    second: OfficeFloorTilev2_15
+      213: -3260275495636989869
+    second: RestrictedWallTile_15
   - first:
-      213: 6494074715914884776
-    second: OfficeFloorTilev2_16
+      213: 5083955074693712404
+    second: RestrictedWallTile_16
   - first:
-      213: 7215825558634734432
-    second: OfficeFloorTilev2_17
+      213: -7833082916669591520
+    second: RestrictedWallTile_17
   - first:
-      213: 296046672251089419
-    second: OfficeFloorTilev2_18
+      213: 1286980778929533415
+    second: RestrictedWallTile_18
   - first:
-      213: 5743586122900075508
-    second: OfficeFloorTilev2_19
+      213: -538213275382460370
+    second: RestrictedWallTile_19
   - first:
-      213: 7473672734390697586
-    second: OfficeFloorTilev2_20
+      213: -2851183087388398094
+    second: RestrictedWallTile_20
   - first:
-      213: 1792070196070103362
-    second: OfficeFloorTilev2_21
+      213: 6497643674173335627
+    second: RestrictedWallTile_21
   - first:
-      213: 8656510470337383588
-    second: OfficeFloorTilev2_22
+      213: -900834776099061804
+    second: RestrictedWallTile_22
   - first:
-      213: 4393352818793135839
-    second: OfficeFloorTilev2_23
+      213: 1490868485138484047
+    second: RestrictedWallTile_23
   - first:
-      213: 1349337722778995918
-    second: OfficeFloorTilev2_24
+      213: 4060424286219523937
+    second: RestrictedWallTile_24
   - first:
-      213: 4206731285427582987
-    second: OfficeFloorTilev2_25
+      213: 138362290783465934
+    second: RestrictedWallTile_25
   - first:
-      213: -1476885648216260157
-    second: OfficeFloorTilev2_26
+      213: -7087511078734619292
+    second: RestrictedWallTile_26
   - first:
-      213: 6567721281653431058
-    second: OfficeFloorTilev2_27
+      213: 1342382469211615230
+    second: RestrictedWallTile_27
   - first:
-      213: 1744213854040481530
-    second: OfficeFloorTilev2_28
+      213: 5666264999043572501
+    second: RestrictedWallTile_28
   - first:
-      213: 7233784211476111235
-    second: OfficeFloorTilev2_29
+      213: 5904208607183324699
+    second: RestrictedWallTile_29
   - first:
-      213: -7987786128064231081
-    second: OfficeFloorTilev2_30
+      213: 5272443655549799124
+    second: RestrictedWallTile_30
   - first:
-      213: 6660136641172990019
-    second: OfficeFloorTilev2_31
+      213: 2488543243164193913
+    second: RestrictedWallTile_31
   - first:
-      213: -6163595799394762159
-    second: OfficeFloorTilev2_32
+      213: 958228206319994317
+    second: RestrictedWallTile_32
   - first:
-      213: 3140178343448878044
-    second: OfficeFloorTilev2_33
+      213: -3510939136353314268
+    second: RestrictedWallTile_33
   - first:
-      213: -5463466378622278527
-    second: OfficeFloorTilev2_34
+      213: -8026356373949583535
+    second: RestrictedWallTile_34
   - first:
-      213: -152457034280377203
-    second: OfficeFloorTilev2_35
+      213: 541290711016555445
+    second: RestrictedWallTile_35
   - first:
-      213: -718100904057457638
-    second: OfficeFloorTilev2_36
+      213: -1635698462851952708
+    second: RestrictedWallTile_36
   - first:
-      213: -4552565849983403286
-    second: OfficeFloorTilev2_37
+      213: -3432242280327129979
+    second: RestrictedWallTile_37
   - first:
-      213: -418407305706016275
-    second: OfficeFloorTilev2_38
+      213: 8172144317200449562
+    second: RestrictedWallTile_38
   - first:
-      213: 1166298723201278794
-    second: OfficeFloorTilev2_39
+      213: 4817411174770734665
+    second: RestrictedWallTile_39
   - first:
-      213: 8493584504312566281
-    second: OfficeFloorTilev2_40
+      213: -7915218713825496117
+    second: RestrictedWallTile_40
   - first:
-      213: -2606588070627789332
-    second: OfficeFloorTilev2_41
+      213: -1253038719723874959
+    second: RestrictedWallTile_41
   - first:
-      213: -4724765306862173127
-    second: OfficeFloorTilev2_42
+      213: 7040745658560577860
+    second: RestrictedWallTile_42
   - first:
-      213: -1222738201081220563
-    second: OfficeFloorTilev2_43
+      213: -50257242023759777
+    second: RestrictedWallTile_43
   - first:
-      213: -4086323942858664019
-    second: OfficeFloorTilev2_44
+      213: 1347766128234601569
+    second: RestrictedWallTile_44
   - first:
-      213: -98886001386521839
-    second: OfficeFloorTilev2_45
+      213: -5631741873869868703
+    second: RestrictedWallTile_45
   - first:
-      213: 7158284745975667693
-    second: OfficeFloorTilev2_46
+      213: -1818720167467090846
+    second: RestrictedWallTile_46
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -173,7 +173,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -232,7 +232,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OfficeFloorTilev2_0
+      name: RestrictedWallTile_0
       rect:
         serializedVersion: 2
         x: 64
@@ -246,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54fef53402fe5c4e0800000000000000
-      internalID: -1961899140801630395
+      spriteID: 10d45248a1048ac10800000000000000
+      internalID: 2064970911779736833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_1
+      name: RestrictedWallTile_1
       rect:
         serializedVersion: 2
         x: 160
@@ -267,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33ca64e9e55603a40800000000000000
-      internalID: 5345884214745541683
+      spriteID: 370d35d3fb1c12b40800000000000000
+      internalID: 5413821254187864179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_2
+      name: RestrictedWallTile_2
       rect:
         serializedVersion: 2
         x: 288
@@ -288,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3973294d50a2d6830800000000000000
-      internalID: 4065952243114981267
+      spriteID: 4cabe842c8d2eba30800000000000000
+      internalID: 4232870779706849988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_3
+      name: RestrictedWallTile_3
       rect:
         serializedVersion: 2
         x: 384
@@ -309,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97ae75c584de80f20800000000000000
-      internalID: 3389219614638991993
+      spriteID: e0fe592db4fe41410800000000000000
+      internalID: 1447044489227398926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_4
+      name: RestrictedWallTile_4
       rect:
         serializedVersion: 2
         x: 32
@@ -330,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe165060b1b89d6c0800000000000000
-      internalID: -4118107436072214033
+      spriteID: c47487ad7f61c5430800000000000000
+      internalID: 3772915841607681868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_5
+      name: RestrictedWallTile_5
       rect:
         serializedVersion: 2
         x: 96
@@ -351,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42b45b943ae2e2140800000000000000
-      internalID: 4696742740245170980
+      spriteID: dfa3ff1cc8a107600800000000000000
+      internalID: 463899953471634173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_6
+      name: RestrictedWallTile_6
       rect:
         serializedVersion: 2
         x: 128
@@ -372,14 +372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 846511cecaefce340800000000000000
-      internalID: 4894566913693275720
+      spriteID: a1ba6c7f14fbe3850800000000000000
+      internalID: 6358730013944490778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_7
+      name: RestrictedWallTile_7
       rect:
         serializedVersion: 2
         x: 192
@@ -393,14 +393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17f75f21cbb7e57b0800000000000000
-      internalID: -5233609669255790735
+      spriteID: aff2d0701735e3180800000000000000
+      internalID: -9133771249346072582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_8
+      name: RestrictedWallTile_8
       rect:
         serializedVersion: 2
         x: 256
@@ -414,14 +414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd05bf3af4691e600800000000000000
-      internalID: 495842702785204444
+      spriteID: dd851521323ce4980800000000000000
+      internalID: -8552684086931400483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_9
+      name: RestrictedWallTile_9
       rect:
         serializedVersion: 2
         x: 320
@@ -435,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6929834d86c5f8370800000000000000
-      internalID: 8326975841338167958
+      spriteID: 75f6d5ccd17446c20800000000000000
+      internalID: 3198759828648193879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_10
+      name: RestrictedWallTile_10
       rect:
         serializedVersion: 2
         x: 352
@@ -456,14 +456,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45b7f87644121ba50800000000000000
-      internalID: 6535041111970249556
+      spriteID: d49dfe16eab799170800000000000000
+      internalID: 8185709786620221773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_11
+      name: RestrictedWallTile_11
       rect:
         serializedVersion: 2
         x: 416
@@ -477,14 +477,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bca19c311b6bb680800000000000000
-      internalID: -8738272930207519563
+      spriteID: 0e67e6337fe406930800000000000000
+      internalID: 4134391281552881376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_12
+      name: RestrictedWallTile_12
       rect:
         serializedVersion: 2
         x: 64
@@ -498,14 +498,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e582eaa951d798140800000000000000
-      internalID: 4722443216017565790
+      spriteID: c8b076a5c217c8340800000000000000
+      internalID: 4867389732589865868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_13
+      name: RestrictedWallTile_13
       rect:
         serializedVersion: 2
         x: 160
@@ -519,14 +519,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d73952d2716d05450800000000000000
-      internalID: 6075591292352828285
+      spriteID: a34a5bf5b870f55b0800000000000000
+      internalID: -5377571134869494726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_14
+      name: RestrictedWallTile_14
       rect:
         serializedVersion: 2
         x: 288
@@ -540,14 +540,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5667d5a6658d81040800000000000000
-      internalID: 4618679283531740773
+      spriteID: 89a686d53831a45a0800000000000000
+      internalID: -6536390454246085992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_15
+      name: RestrictedWallTile_15
       rect:
         serializedVersion: 2
         x: 384
@@ -561,14 +561,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3d19777874d71d30800000000000000
-      internalID: 4402220774643539260
+      spriteID: 35885acd5bc21c2d0800000000000000
+      internalID: -3260275495636989869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_16
+      name: RestrictedWallTile_16
       rect:
         serializedVersion: 2
         x: 64
@@ -582,14 +582,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a6d3fa0c869f1a50800000000000000
-      internalID: 6494074715914884776
+      spriteID: 41ac9295436dd8640800000000000000
+      internalID: 5083955074693712404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_17
+      name: RestrictedWallTile_17
       rect:
         serializedVersion: 2
         x: 160
@@ -603,14 +603,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 063ab9f4d13c32460800000000000000
-      internalID: 7215825558634734432
+      spriteID: 0207ab7b69c4b4390800000000000000
+      internalID: -7833082916669591520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_18
+      name: RestrictedWallTile_18
       rect:
         serializedVersion: 2
         x: 288
@@ -624,14 +624,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b02767041e4cb1400800000000000000
-      internalID: 296046672251089419
+      spriteID: 7e1b9d023364cd110800000000000000
+      internalID: 1286980778929533415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_19
+      name: RestrictedWallTile_19
       rect:
         serializedVersion: 2
         x: 384
@@ -645,14 +645,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f37250e52155bf40800000000000000
-      internalID: 5743586122900075508
+      spriteID: e20dd6ba0e1e788f0800000000000000
+      internalID: -538213275382460370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_20
+      name: RestrictedWallTile_20
       rect:
         serializedVersion: 2
         x: 32
@@ -666,14 +666,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27e31e431c1d7b760800000000000000
-      internalID: 7473672734390697586
+      spriteID: 2fdec9696109e68d0800000000000000
+      internalID: -2851183087388398094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_21
+      name: RestrictedWallTile_21
       rect:
         serializedVersion: 2
         x: 96
@@ -687,14 +687,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 249b2593956bed810800000000000000
-      internalID: 1792070196070103362
+      spriteID: b486a24ee744c2a50800000000000000
+      internalID: 6497643674173335627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_22
+      name: RestrictedWallTile_22
       rect:
         serializedVersion: 2
         x: 128
@@ -708,14 +708,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4acc8ea986a122870800000000000000
-      internalID: 8656510470337383588
+      spriteID: 4dffb414b879f73f0800000000000000
+      internalID: -900834776099061804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_23
+      name: RestrictedWallTile_23
       rect:
         serializedVersion: 2
         x: 192
@@ -729,14 +729,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fde30299c1358fc30800000000000000
-      internalID: 4393352818793135839
+      spriteID: f4b018ffcf0a0b410800000000000000
+      internalID: 1490868485138484047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_24
+      name: RestrictedWallTile_24
       rect:
         serializedVersion: 2
         x: 256
@@ -750,14 +750,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eccc640828fc9b210800000000000000
-      internalID: 1349337722778995918
+      spriteID: 167db711066895830800000000000000
+      internalID: 4060424286219523937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_25
+      name: RestrictedWallTile_25
       rect:
         serializedVersion: 2
         x: 320
@@ -771,14 +771,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b08fe6dd0df416a30800000000000000
-      internalID: 4206731285427582987
+      spriteID: ec1357835cf8be100800000000000000
+      internalID: 138362290783465934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_26
+      name: RestrictedWallTile_26
       rect:
         serializedVersion: 2
         x: 352
@@ -792,14 +792,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c1823ce35c018be0800000000000000
-      internalID: -1476885648216260157
+      spriteID: 46d9062a93a14ad90800000000000000
+      internalID: -7087511078734619292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_27
+      name: RestrictedWallTile_27
       rect:
         serializedVersion: 2
         x: 416
@@ -813,14 +813,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21bd9b855bb352b50800000000000000
-      internalID: 6567721281653431058
+      spriteID: effe1165eb911a210800000000000000
+      internalID: 1342382469211615230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_28
+      name: RestrictedWallTile_28
       rect:
         serializedVersion: 2
         x: 64
@@ -834,14 +834,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afed56e4241b43810800000000000000
-      internalID: 1744213854040481530
+      spriteID: 513a837defd92ae40800000000000000
+      internalID: 5666264999043572501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_29
+      name: RestrictedWallTile_29
       rect:
         serializedVersion: 2
         x: 160
@@ -855,14 +855,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38fdcd20a60936460800000000000000
-      internalID: 7233784211476111235
+      spriteID: b1647f64276ffe150800000000000000
+      internalID: 5904208607183324699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_30
+      name: RestrictedWallTile_30
       rect:
         serializedVersion: 2
         x: 288
@@ -876,14 +876,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75940fe66dea52190800000000000000
-      internalID: -7987786128064231081
+      spriteID: 4dace43f19b7b2940800000000000000
+      internalID: 5272443655549799124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_31
+      name: RestrictedWallTile_31
       rect:
         serializedVersion: 2
         x: 384
@@ -897,14 +897,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 348edacfcfe8d6c50800000000000000
-      internalID: 6660136641172990019
+      spriteID: 974100115e4198220800000000000000
+      internalID: 2488543243164193913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_32
+      name: RestrictedWallTile_32
       rect:
         serializedVersion: 2
         x: 64
@@ -918,14 +918,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1524cfdc642867aa0800000000000000
-      internalID: -6163595799394762159
+      spriteID: dc5867b0a7f4c4d00800000000000000
+      internalID: 958228206319994317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_33
+      name: RestrictedWallTile_33
       rect:
         serializedVersion: 2
         x: 160
@@ -939,14 +939,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdb15a4e097249b20800000000000000
-      internalID: 3140178343448878044
+      spriteID: 42ad4ad0573a64fc0800000000000000
+      internalID: -3510939136353314268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_34
+      name: RestrictedWallTile_34
       rect:
         serializedVersion: 2
         x: 256
@@ -960,14 +960,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 184edeb764edd24b0800000000000000
-      internalID: -5463466378622278527
+      spriteID: 15fea024767ac9090800000000000000
+      internalID: -8026356373949583535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_35
+      name: RestrictedWallTile_35
       rect:
         serializedVersion: 2
         x: 32
@@ -981,14 +981,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d846534922d52edf0800000000000000
-      internalID: -152457034280377203
+      spriteID: 5b34c56a80d038700800000000000000
+      internalID: 541290711016555445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_36
+      name: RestrictedWallTile_36
       rect:
         serializedVersion: 2
         x: 96
@@ -1002,14 +1002,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a14b4cc480bc806f0800000000000000
-      internalID: -718100904057457638
+      spriteID: cbf8e021ae4dc49e0800000000000000
+      internalID: -1635698462851952708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_37
+      name: RestrictedWallTile_37
       rect:
         serializedVersion: 2
         x: 128
@@ -1023,14 +1023,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aea3a2fda7902d0c0800000000000000
-      internalID: -4552565849983403286
+      spriteID: 5845602b4d93e50d0800000000000000
+      internalID: -3432242280327129979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_38
+      name: RestrictedWallTile_38
       rect:
         serializedVersion: 2
         x: 192
@@ -1044,14 +1044,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de1f6f3b5c4813af0800000000000000
-      internalID: -418407305706016275
+      spriteID: a10c5f765f9496170800000000000000
+      internalID: 8172144317200449562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_39
+      name: RestrictedWallTile_39
       rect:
         serializedVersion: 2
         x: 224
@@ -1065,14 +1065,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a43676a62868f2010800000000000000
-      internalID: 1166298723201278794
+      spriteID: 946f43190f1ead240800000000000000
+      internalID: 4817411174770734665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_40
+      name: RestrictedWallTile_40
       rect:
         serializedVersion: 2
         x: 288
@@ -1086,14 +1086,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90210511b164fd570800000000000000
-      internalID: 8493584504312566281
+      spriteID: bc338e2348e772290800000000000000
+      internalID: -7915218713825496117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_41
+      name: RestrictedWallTile_41
       rect:
         serializedVersion: 2
         x: 352
@@ -1107,14 +1107,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce5b576c5f983dbd0800000000000000
-      internalID: -2606588070627789332
+      spriteID: 1755c0d5cef4c9ee0800000000000000
+      internalID: -1253038719723874959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_42
+      name: RestrictedWallTile_42
       rect:
         serializedVersion: 2
         x: 384
@@ -1128,14 +1128,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 934046d7cf24e6eb0800000000000000
-      internalID: -4724765306862173127
+      spriteID: 441806c7fd0c5b160800000000000000
+      internalID: 7040745658560577860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_43
+      name: RestrictedWallTile_43
       rect:
         serializedVersion: 2
         x: 416
@@ -1149,14 +1149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d22f04f9516f70fe0800000000000000
-      internalID: -1222738201081220563
+      spriteID: f5078cdfd437d4ff0800000000000000
+      internalID: -50257242023759777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_44
+      name: RestrictedWallTile_44
       rect:
         serializedVersion: 2
         x: 64
@@ -1170,14 +1170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da75cb436067a47c0800000000000000
-      internalID: -4086323942858664019
+      spriteID: 16c1ab1272a34b210800000000000000
+      internalID: 1347766128234601569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_45
+      name: RestrictedWallTile_45
       rect:
         serializedVersion: 2
         x: 160
@@ -1191,14 +1191,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11bf816a4bfa0aef0800000000000000
-      internalID: -98886001386521839
+      spriteID: 1613b4d9a9808d1b0800000000000000
+      internalID: -5631741873869868703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OfficeFloorTilev2_46
+      name: RestrictedWallTile_46
       rect:
         serializedVersion: 2
         x: 256
@@ -1212,8 +1212,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: deb1afcdc06575360800000000000000
-      internalID: 7158284745975667693
+      spriteID: 26cf848c4ab92c6e0800000000000000
+      internalID: -1818720167467090846
       vertices: []
       indices: 
       edges: []
