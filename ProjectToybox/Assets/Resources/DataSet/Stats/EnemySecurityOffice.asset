@@ -16,4 +16,4 @@ MonoBehaviour:
   hpGen: 2
   atk: 32
   fever: 1.3
-  moveSpeed: 2
+  moveSpeed: 3
