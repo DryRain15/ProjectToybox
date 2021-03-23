@@ -22,14 +22,13 @@ public class ScreenUIController : MonoBehaviour
         {
             _fade = new GameObject("Fade").AddComponent<RawImage>();
             _fade.transform.SetParent(transform);
+            _fade.color = Color.black;
         }
     }
 
     private void Start()
     {
         _canvas.worldCamera = Camera.main;
-        _fade.color = Color.black;
-        ScreenFadeCall(new Color(0, 0, 0, 0), 1f);
     }
 
     public Coroutine ScreenFadeCall(Color color, float duration)

@@ -27,8 +27,21 @@ public class GlobalInputController : MonoBehaviour
 {
     public static GlobalInputController Instance;
 
+    private bool _getControl = true;
+    public bool GetControl { get => _getControl; }
+
     public float hInput;
     public float vInput;
+
+    public void RemoveControl()
+    {
+        _getControl = false;
+    }
+
+    public void RestoreControl()
+    {
+        _getControl = true;
+    }
 
     #region KeyAssign
 
@@ -109,9 +122,11 @@ public class GlobalInputController : MonoBehaviour
         ResetKeyDown();
         ResetKeyRelease();
 
-
         hInput = 0f;
         vInput = 0f;
+        
+        if (!_getControl) return;
+        
         foreach (var targetKey in GetKeyCodes(InputType))
         {
             if (Input.GetKey(targetKey))

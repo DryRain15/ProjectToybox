@@ -18,6 +18,7 @@ namespace Proto.Behaviours.Impl.Tutorial
 
         private IEnumerator DoorTransition(ICharacterObject target)
         {
+            GlobalInputController.Instance.RemoveControl();
             bool toDoor;
             if (FieldObjectController.FOs.ContainsKey(targetPhase))
                 toDoor = true;
@@ -30,6 +31,7 @@ namespace Proto.Behaviours.Impl.Tutorial
             {
                 GetToDoor(target);
                 yield return ScreenUIController.Instance.ScreenFadeCall(new Color(0, 0, 0, 0), toDoor ? 0.5f : 1f);
+                GlobalInputController.Instance.RestoreControl();
             }
             else NextPhase();
             
