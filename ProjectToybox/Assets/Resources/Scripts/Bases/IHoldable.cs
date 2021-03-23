@@ -8,6 +8,7 @@ public enum HoldState
     StartHold,
     Holding,
     OnAction,
+    EndAction,
     EndHold,
     NonHoldable,
 }

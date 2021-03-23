@@ -77,11 +77,16 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     // Update is called once per frame
     void Update()
     {
+        if (_currentHold != null)
+            HoldCheck();
+        
+        if (!GlobalInputController.Instance.GetControl)
+            return;
+        
         MoveTo();
         FaceDirection();
 
         InputCheck();
-        
         
         _innerTimer += Time.deltaTime;
     }
@@ -89,6 +94,17 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     private void OnsceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
         isSceneLoaded = true;
+    }
+
+    private void HoldCheck()
+    {
+        if (_currentHold.HoldState == HoldState.EndAction)
+        {
+            Debug.LogError("state change");
+            AnimState = AnimState.Hold;
+            _anim.SetInteger("ActionState", (int)AnimState);
+            _anim.SetTrigger("ActionStateOnChange");
+        }
     }
 
     private void InputCheck()
@@ -99,6 +115,9 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
             {
                 if (currentHold.HoldState == HoldState.Holding)
                 {
+                    AnimState = AnimState.Attack;
+                    _anim.SetInteger("ActionState", (int)AnimState);
+                    _anim.SetTrigger("ActionStateOnChange");
                     currentHold.Use();
                 }
             }
@@ -109,7 +128,12 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
                     currentItem.Interact(this);
                     var holdable = currentItem.GameObject.GetComponent<IHoldable>();
                     if (holdable != null)
+                    {
+                        AnimState = AnimState.Hold;
                         currentHold = holdable;
+                        _anim.SetInteger("ActionState", (int) AnimState);
+                        _anim.SetTrigger("ActionStateOnChange");
+                    }
                 }
             }
         }
@@ -269,7 +293,9 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
         
         _anim.SetInteger("ActionState", (int)AnimState);
         if (prevAnim != AnimState)
+        {
             _anim.SetTrigger("ActionStateOnChange");
+        }
         if (AnimState == AnimState.Stand | 
             AnimState == AnimState.Hold) return;
         

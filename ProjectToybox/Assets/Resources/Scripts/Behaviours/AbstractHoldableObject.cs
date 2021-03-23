@@ -7,13 +7,15 @@ namespace Proto.Behaviours
     {
         public override void Update()
         {
-            base.Update();
-            HoldableUpdate();
-
             if (HoldState == HoldState.EndHold)
                 HoldState = HoldState.None;
             if (HoldState == HoldState.StartHold)
                 HoldState = HoldState.Holding;
+            if (HoldState == HoldState.EndAction)
+                HoldState = HoldState.Holding;
+            
+            base.Update();
+            HoldableUpdate();
         }
 
         public override void Interact(ICharacterObject target)
@@ -46,6 +48,7 @@ namespace Proto.Behaviours
             Holder = target;
             transform.SetParent(target.Transform);
             transform.localPosition = new Vector3(0.5f, 0.75f);
+            gameObject.layer = 11;
             OnHold();
         }
 
@@ -54,6 +57,7 @@ namespace Proto.Behaviours
             innerTimer = 0f;
             HoldState = HoldState.OnAction;
             InteractState = InteractState.OnAction;
+            GlobalInputController.Instance.RemoveControl();
             OnUse();
         }
 
@@ -64,6 +68,7 @@ namespace Proto.Behaviours
             Holder = null;
             transform.localPosition = Vector3.zero;
             transform.SetParent(null);
+            gameObject.layer = 9;
             OnRelease();
         }
 
@@ -116,10 +121,14 @@ namespace Proto.Behaviours
             }
             else if (innerTimer > 0.3f)
             {
-                HoldState = HoldState.Holding;
+                HoldState = HoldState.EndAction;
+                GlobalInputController.Instance.RestoreControl();
+            }
+            else
+            {
+                OnCollisionCheck();
             }
 
-            OnCollisionCheck();
         }
 
         private void OnCollisionCheck()

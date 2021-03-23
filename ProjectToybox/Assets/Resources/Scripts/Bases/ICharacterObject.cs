@@ -11,8 +11,8 @@ public enum AnimState
     Hold = 2,
     HoldMove = 3,
     Attack = 4,
-    Interact = 5,
-    Dance = 6,
+    Dance = 5,
+    Interact = 6,
     Dash = 7,
 }
 
