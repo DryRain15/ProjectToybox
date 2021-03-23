@@ -93,6 +93,7 @@ public class GlobalInputController : MonoBehaviour
         else
         {
             Instance = this;
+            // AssignDefault();
         }
         DontDestroyOnLoad(gameObject);
     }
@@ -275,8 +276,23 @@ public class GlobalInputController : MonoBehaviour
         return false;
     }
 
+    public bool IsAssignedKey(KeyCode key)
+    {
+        if (UseKey == key) return true;
+        if (DashKey == key) return true;
+        if (CancelKey == key) return true;
+        if (DebugKey == key) return true;
+        if (MenuKey == key) return true;
+        return false;
+    }
+
     public void AssignKey(KeyType type, KeyCode key)
     {
+        if (IsAssignedKey(key) && key != KeyCode.None)
+        {
+            Debug.Log(key + " is already assigned key!");
+            return;
+        }
         switch (type)
         {
             case KeyType.Use:

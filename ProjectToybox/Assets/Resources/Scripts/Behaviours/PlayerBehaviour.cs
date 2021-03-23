@@ -14,8 +14,8 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     private Vector3 _collisionPoint;
     private Animator _anim;
     private SpriteRenderer _sr;
-    private IInteractableObject _currentItem;
-    private IHoldable _currentHold;
+    public IInteractableObject currentItem { get; private set; }
+    public IHoldable currentHold { get; private set; }
     private float _velocityMultiplier = 1f;
     private float _innerTimer = 0f;
 
@@ -95,33 +95,33 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     {
         if (GlobalInputController.Instance.useKeyDown)
         {
-            if (_currentHold != null)
+            if (currentHold != null)
             {
-                if (_currentHold.HoldState == HoldState.Holding)
+                if (currentHold.HoldState == HoldState.Holding)
                 {
-                    _currentHold.Use();
+                    currentHold.Use();
                 }
             }
-            else if (_currentItem != null)
+            else if (currentItem != null)
             {
-                if (_currentItem.InteractState == InteractState.Interactable)
+                if (currentItem.InteractState == InteractState.Interactable)
                 {
-                    _currentItem.Interact(this);
-                    var holdable = _currentItem.GameObject.GetComponent<IHoldable>();
+                    currentItem.Interact(this);
+                    var holdable = currentItem.GameObject.GetComponent<IHoldable>();
                     if (holdable != null)
-                        _currentHold = holdable;
+                        currentHold = holdable;
                 }
             }
         }
 
         if (GlobalInputController.Instance.cancelKeyDown)
         {
-            if (_currentHold != null)
+            if (currentHold != null)
             {
-                if (_currentHold.HoldState == HoldState.Holding)
+                if (currentHold.HoldState == HoldState.Holding)
                 {
-                    _currentHold.Release();
-                    _currentHold = null;
+                    currentHold.Release();
+                    currentHold = null;
                 }
             }
         }
@@ -151,11 +151,11 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
             var tiio = hits[i].GetComponent<IInteractableObject>();
             if (tiio != null && 
                 tiio.InteractState == InteractState.Interactable &&
-                _currentHold == null)
+                currentHold == null)
             {
                 var t_dist = Vector3.Distance(hits[i].transform.position, transform.position);
                 if (t_dist < dist && 
-                    (_currentHold == null || (_currentHold != null && tiio.GameObject != _currentHold.GameObject)))
+                    (currentHold == null || (currentHold != null && tiio.GameObject != currentHold.GameObject)))
                 {
                     dist = t_dist;
                     iio = tiio;
@@ -165,24 +165,24 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
         if (iio != null)
         {
-            if (_currentItem == null)
+            if (currentItem == null)
             {
-                _currentItem = iio;
-                _currentItem.ShowInteractable();
+                currentItem = iio;
+                currentItem.ShowInteractable();
             }
-            else if (_currentItem != iio)
+            else if (currentItem != iio)
             {
-                _currentItem.HideInteractable();
-                _currentItem = iio;
+                currentItem.HideInteractable();
+                currentItem = iio;
                 iio.ShowInteractable();
             }
         }
         else
         {
-            if (_currentItem != null)
+            if (currentItem != null)
             {
-                _currentItem.HideInteractable();
-                _currentItem = null;
+                currentItem.HideInteractable();
+                currentItem = null;
             }
         }
             
@@ -234,7 +234,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
             _innerTimer = 0f;
             PooledFX dashFx = ObjectPoolController.Self.Instantiate("MirrorImageFX", 
                 new PoolParameters(Position)) as PooledFX;
-            dashFx.Initialize(0.3f);
+            if(dashFx != null) dashFx.Initialize(0.3f);
         }
         
         if (GlobalInputController.Instance.dashKeyDown)
@@ -252,7 +252,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
         _anim.ResetTrigger("ActionStateOnChange");
         var prevAnim = AnimState;
-        if (_currentHold != null)
+        if (currentHold != null)
         {
             if (Velocity.magnitude < Mathf.Epsilon)
                 AnimState = AnimState.Hold;
