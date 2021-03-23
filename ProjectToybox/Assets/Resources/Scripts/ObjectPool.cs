@@ -71,5 +71,13 @@ namespace Proto
             
             //Debug.Log(obj.Name + " Disposed!");
         }
+
+        public void DisposeAll()
+        {
+            foreach (var obj in _pool)
+            {
+                Dispose(obj);
+            }
+        }
     }
 }

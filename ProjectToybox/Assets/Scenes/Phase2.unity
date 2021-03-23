@@ -424,6 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 0}
+  offset: {x: 0, y: 0}
   targetPhase: Phase3
 --- !u!1001 &779261160
 PrefabInstance:
@@ -606,12 +607,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6657755603810785557, guid: 4d862e85d08836a4aabdbb0d2b4ec908,
-        type: 3}
-      propertyPath: stats
-      value: 
-      objectReference: {fileID: 11400000, guid: 0a7e6fd7f5b223d468a2f817a1a971c3,
-        type: 2}
     - target: {fileID: 6657755603810785558, guid: 4d862e85d08836a4aabdbb0d2b4ec908,
         type: 3}
       propertyPath: m_Name

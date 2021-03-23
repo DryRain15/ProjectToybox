@@ -335,9 +335,9 @@ public class GlobalInputController : MonoBehaviour
     {
         var wasd = new[] { KeyCode.W, KeyCode.A, KeyCode.S, KeyCode.D };
         var arrow = new[] { KeyCode.UpArrow, KeyCode.LeftArrow, KeyCode.DownArrow, KeyCode.RightArrow };
-
-        if (wasd.Contains(key)) return new KeyValuePair<InputType, int>(InputType.WASD, ArrayUtility.IndexOf(wasd, key));
-        if (arrow.Contains(key)) return new KeyValuePair<InputType, int>(InputType.Arrow, ArrayUtility.IndexOf(arrow, key));
+        
+        if (wasd.Contains(key)) return new KeyValuePair<InputType, int>(InputType.WASD, Array.IndexOf(wasd, key));
+        if (arrow.Contains(key)) return new KeyValuePair<InputType, int>(InputType.Arrow, Array.IndexOf(arrow, key));
         return new KeyValuePair<InputType, int>(InputType.None, -1);
     }
 

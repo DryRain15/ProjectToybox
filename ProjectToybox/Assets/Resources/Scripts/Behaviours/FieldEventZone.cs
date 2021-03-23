@@ -62,7 +62,7 @@ public class FieldEventZone : MonoBehaviour
             Gizmos.DrawLine(pos + points[i - 1], pos + points[i]);
         }
         Gizmos.DrawLine(pos + points[3], pos + points[0]);
-        Handles.color = Color.black;
-        Handles.Label(transform.position, gameObject.name);
+        // Handles.color = Color.black;
+        // Handles.Label(transform.position, gameObject.name);
     }
 }

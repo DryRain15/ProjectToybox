@@ -47,6 +47,11 @@ namespace Proto
         {
             _poolList[obj.Name].Dispose(obj);
         }
+
+        public void DisposeAll(string objName)
+        {
+            _poolList[objName].DisposeAll();
+        }
     }
 
 }

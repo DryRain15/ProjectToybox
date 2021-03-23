@@ -43,6 +43,7 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
         if (isSceneLoaded)
         {
+            ObjectPoolController.Self.DisposeAll("InteractableFX");
             ScreenUIController.Instance.ScreenFadeCall(new Color(0, 0, 0, 0), 1f);
             GlobalInputController.Instance.RestoreControl();
         }

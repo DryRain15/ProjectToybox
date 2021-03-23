@@ -42,6 +42,7 @@ namespace Proto.Behaviours.Impl.Tutorial
 
         private void NextPhase()
         {
+            ObjectPoolController.Self.DisposeAll("InteractableFX");
             SceneManager.LoadSceneAsync(targetPhase);
         }
         
