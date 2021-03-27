@@ -1,3 +1,4 @@
+using System.Collections;
 using Proto.Behaviours;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,8 +9,14 @@ namespace Proto.Behaviours.Impl
     {
         protected override void OnInteract(ICharacterObject interacted)
         {
-            SceneManager.LoadScene("Credit");
+            StartCoroutine(GoCredit());
             InteractState = InteractState.EndInteract;
+        }
+
+        private IEnumerator GoCredit()
+        {
+            yield return ScreenUIController.Instance.ScreenFadeCall(new Color(0, 0, 0, 0), 1f);
+            SceneManager.LoadScene("Credit");
         }
     }
 }
