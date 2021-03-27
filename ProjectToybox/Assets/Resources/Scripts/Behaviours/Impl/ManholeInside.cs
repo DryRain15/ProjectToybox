@@ -1,5 +1,6 @@
 using Proto.Behaviours;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Proto.Behaviours.Impl
 {
@@ -7,6 +8,7 @@ namespace Proto.Behaviours.Impl
     {
         protected override void OnInteract(ICharacterObject interacted)
         {
+            SceneManager.LoadScene("Credit");
             InteractState = InteractState.EndInteract;
         }
     }
