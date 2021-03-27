@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3a758a10a54e27a3477ffa1572e302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 0}
+  stats: {fileID: 11400000, guid: 7a270bc31a2c2f549b36c5ac98afd7bd, type: 2}
 --- !u!60 &8030759896800282382
 PolygonCollider2D:
   m_ObjectHideFlags: 0
