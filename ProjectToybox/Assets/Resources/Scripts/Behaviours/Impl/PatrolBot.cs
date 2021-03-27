@@ -14,7 +14,15 @@ namespace Proto.Behaviours.Impl
         {
             base.GetHit(state);
             if (CurrentHP <= 0f)
+            {
+                if (_showRange != null)
+                {
+                    _showRange.Dispose();
+                    _showRange = null;
+                }
+
                 gameObject.SetActive(false);
+            }
         }
     }
 }
