@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Proto
 {
@@ -17,7 +18,7 @@ namespace Proto
             
             _poolList = new Dictionary<string, ObjectPool>();
 
-            var prefabs = Resources.LoadAll<GameObject>("Prefabs");
+            var prefabs = UnityEngine.Resources.LoadAll<GameObject>("Prefabs");
 
             foreach (var prefab in prefabs)
             {
@@ -26,16 +27,6 @@ namespace Proto
                 var pool = poolObj.AddComponent<ObjectPool>().Initialize(prefab.name, prefab);
                 _poolList.Add(prefab.name, pool);
             }
-        }
-
-        // Start is called before the first frame update
-        void Start()
-        {
-        }
-
-        private void Update()
-        {
-
         }
 
         public IPooledObject Instantiate(string poolName, PoolParameters param)

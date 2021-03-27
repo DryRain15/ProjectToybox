@@ -67,6 +67,7 @@ namespace Proto.Behaviours
             {
                 innerTimer = 0f;
                 InteractState = InteractState.OnAction;
+                HideInteractable();
                 OnInteract(target);
             }
         }
@@ -76,6 +77,7 @@ namespace Proto.Behaviours
 
             _interactableFX ??= ObjectPoolController.Self.Instantiate("InteractableFX",
                 new PoolParameters(transform.position + Vector3.up * 0.5f));
+            _interactableFX?.gameObject.transform.SetParent(null);
         }
 
         public void HideInteractable()

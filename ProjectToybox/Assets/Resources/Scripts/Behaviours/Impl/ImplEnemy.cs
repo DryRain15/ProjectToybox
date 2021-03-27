@@ -1,6 +1,8 @@
+using System;
 using Proto;
 using Proto.Behaviours;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Proto.Behaviours.Impl
 {
@@ -8,8 +10,14 @@ namespace Proto.Behaviours.Impl
     {
         private Collider2D _col;
         private Vector3 _collisionPoint;
-        private Animator _anim;
-        private IPooledObject _showRange;
+        protected Animator _anim;
+        protected IPooledObject _showRange;
+
+        [FormerlySerializedAs("AttackRange")] public float attackRange = 2f;
+        [FormerlySerializedAs("SightRange")] public float sightRange = 3f;
+        public float attackTime = 1f;
+
+        public float DamageTimer = 0f;
 
         // Start is called before the first frame update
         public override void Start()
@@ -19,7 +27,6 @@ namespace Proto.Behaviours.Impl
             _anim = GetComponentInChildren<Animator>();
             _col = GetComponent<Collider2D>();
 
-            EventController.Instance.Subscribe("DebugEvent", DebugEvent);
             EventController.Instance.Subscribe("BattleGroupEvent", ToBattleState);
             EventController.Instance.Subscribe("NoticeGroupEvent", ToNoticeState);
         }
@@ -54,7 +61,10 @@ namespace Proto.Behaviours.Impl
         {
             base.Update();
             AutoUpdate();
-            MoveTo();
+            if (InteractState != InteractState.OnAction)
+                MoveTo();
+
+            DamageTimer += Time.deltaTime;
         }
 
         private void FixedUpdate()
@@ -158,10 +168,16 @@ namespace Proto.Behaviours.Impl
                 var left = Utils.DirectionContains(Direction, Direction.Left);
                 var right = Utils.DirectionContains(Direction, Direction.Right);
 
-                _anim.SetBool("IsUp", up);
-                _anim.SetBool("IsDown", down);
-                _anim.SetBool("IsLeft", left);
-                _anim.SetBool("IsRight", right);
+                if (up || down)
+                {
+                    _anim.SetBool("IsUp", up);
+                    _anim.SetBool("IsDown", down);
+                }
+                if (left || right)
+                {
+                    _anim.SetBool("IsLeft", left);
+                    _anim.SetBool("IsRight", right);
+                }
 
                 spriteRenderer.flipX = right;
             }
@@ -196,7 +212,7 @@ namespace Proto.Behaviours.Impl
 
         }
 
-        public void AutoUpdate()
+        public virtual void AutoUpdate()
         {
             if (InteractState == InteractState.OnAction)
             {
@@ -207,8 +223,17 @@ namespace Proto.Behaviours.Impl
             switch (AutoState)
             {
                 case AutoState.None:
-                    return;
+                    break;
                 case AutoState.Wait:
+                    if (this.TargetInRange(PlayerBehaviour.Instance, sightRange))
+                    {
+                        AutoState = AutoState.Follow;
+                        var param = new EventParameter(
+                            "BattleGroup".EventParameterPairing(BattleGroup),
+                            "NoticeGroup".EventParameterPairing(NoticeGroup));
+                        EventController.Instance.EventCall("BattleGroupEvent", param);
+                        EventController.Instance.EventCall("NoticeGroupEvent", param);
+                    }
                     break;
                 case AutoState.Follow:
                     var v = PlayerBehaviour.Instance.Position - Position;
@@ -217,7 +242,7 @@ namespace Proto.Behaviours.Impl
                         ? Mathf.Sqrt(5) / 4
                         : 0.5f;
                     Velocity = Utils.DirectionToVector(Direction) * (singleDirectionMult * Stats.moveSpeed);
-                    if (this.TargetInRange(PlayerBehaviour.Instance, 1f))
+                    if (this.TargetInRange(PlayerBehaviour.Instance, attackRange))
                     {
                         AutoState = AutoState.Action;
                         Interact(PlayerBehaviour.Instance);
@@ -249,19 +274,38 @@ namespace Proto.Behaviours.Impl
             }
         }
 
-        private void OnActionStateUpdate()
+        protected virtual void OnActionStateUpdate()
         {
-            if (innerTimer > 1f)
-            {
+            if (innerTimer > 1f * attackTime)
                 InteractState = InteractState.EndInteract;
+            if (innerTimer > 0.5f * attackTime)
+            {
                 if (_showRange != null)
                 {
                     _showRange.Dispose();
                     _showRange = null;
+                    
+                    AnimState = AnimState.Attack;
+                    _anim.SetInteger("ActionState", (int)AnimState);
+                    _anim.SetTrigger("ActionStateOnChange");
+
+                    var state = new DamageState
+                    {
+                        Damage = Stats.atk,
+                        DamageType = 0,
+                        Getter = PlayerBehaviour.Instance,
+                        Sender = this,
+                        KnockBack = 1f,
+                    };
+                    if (this.TargetInRangeAngle(PlayerBehaviour.Instance, attackRange, Direction))
+                        PlayerBehaviour.Instance.GetHit(state);
                 }
             }
-            var yVelocity = 2.5f - 2.5f * (innerTimer / 0.5f);
-            Transform.GetChild(0).localPosition += new Vector3(0f, 1f, 2f) * (yVelocity * Time.deltaTime);
+            else
+            {
+                var yVelocity = 1.5f - 1.5f * (innerTimer * 4f / attackTime);
+                Transform.GetChild(0).localPosition += new Vector3(0f, 1f, 2f) * (yVelocity * Time.deltaTime);
+            }
         }
 
 
@@ -283,10 +327,32 @@ namespace Proto.Behaviours.Impl
                 var (x, y) = Direction.DirectionToRange();
                 if (Direction == Direction.Up)
                     _showRange.gameObject.GetComponent<RadialFX>()
-                        .Initialize(x, y, Color.red, 2f, y);
+                        .Initialize(x, y, Color.red, attackRange, y);
                 else
                     _showRange.gameObject.GetComponent<RadialFX>().Initialize(
-                        x, y, Color.red, 2f);
+                        x, y, Color.red, attackRange);
+
+                _anim.SetTrigger("DirectionOnChange");
+                if (Direction != Direction.None)
+                {
+                    var up = Utils.DirectionContains(Direction, Direction.Up);
+                    var down = Utils.DirectionContains(Direction, Direction.Down);
+                    var left = Utils.DirectionContains(Direction, Direction.Left);
+                    var right = Utils.DirectionContains(Direction, Direction.Right);
+
+                    if (up || down)
+                    {
+                        _anim.SetBool("IsUp", up);
+                        _anim.SetBool("IsDown", down);
+                    }
+                    if (left || right)
+                    {
+                        _anim.SetBool("IsLeft", left);
+                        _anim.SetBool("IsRight", right);
+                    }
+
+                    spriteRenderer.flipX = right;
+                }
                 
                 return;
             }
@@ -309,19 +375,36 @@ namespace Proto.Behaviours.Impl
         #region IDamaged
 
         public HitType HitType { get; set; }
-        public void GetHit(DamageState state)
+        public virtual void GetHit(DamageState state)
         {
-            if (InteractState == InteractState.OnAction) return;
-            CurrentHP -= state.Damage;
+            if (DamageTimer < 0.5f) return;
+            DamageTimer = 0f;
+            if (InteractState == InteractState.OnAction)
+            {
+                CurrentHP -= state.Damage;
             
-            var bar = ObjectPoolController.Self.Instantiate("UIBarFX", new PoolParameters(Position)) as UIBarFX;
-            bar.Initialize(transform, 0, CurrentHP / Stats.hpMax, 0.5f);
+                var bar = ObjectPoolController.Self.Instantiate("UIBarFX", new PoolParameters(Position)) as UIBarFX;
+                bar.Initialize(transform, 0, CurrentHP / Stats.hpMax, 0.5f);
 
-            var tfx = ObjectPoolController.Self.Instantiate("DamageTextFX", new PoolParameters(Position)) as DamageTextFX;
-            tfx.Initialize(string.Format($"{state.Damage}"), false, 0.5f);
+                var tfx = ObjectPoolController.Self.Instantiate("DamageTextFX", new PoolParameters(Position)) as DamageTextFX;
+                tfx.Initialize(string.Format($"{state.Damage}"), false, 0.5f);
 
-            Utils.DamageRedPulse(spriteRenderer, 0.3f);
-            Interact(state.Sender);
+                Utils.DamageRedPulse(spriteRenderer, 0.3f);
+            }
+            else
+            {
+                CurrentHP -= state.Damage;
+            
+                var bar = ObjectPoolController.Self.Instantiate("UIBarFX", new PoolParameters(Position)) as UIBarFX;
+                bar.Initialize(transform, 0, CurrentHP / Stats.hpMax, 0.5f);
+
+                var tfx = ObjectPoolController.Self.Instantiate("DamageTextFX", new PoolParameters(Position)) as DamageTextFX;
+                tfx.Initialize(string.Format($"{state.Damage}"), false, 0.5f);
+
+                Utils.DamageRedPulse(spriteRenderer, 0.3f);
+                Interact(state.Sender);
+            }
+            
 #if UNITY_EDITOR
             Debug.Log(string.Format($"{state.Damage}damage dealt from {state.Sender} to {state.Getter}"));
 #endif

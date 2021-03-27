@@ -187,6 +187,35 @@ public static class Utils
         return Mathf.Pow(center.x - point.x, 2f) / (a * a) + Mathf.Pow(center.y - point.y, 2f) / (b * b) <= 1;
     }
 
+    public static bool TargetInRangeAngle(this IFieldObject fo, IFieldObject target, float range, Direction direction)
+    {
+        var inRange = fo.TargetInRange(target, range);
+        if (!inRange) return false;
+
+        var dir = (target.Position - fo.Position).normalized;
+        switch (direction)
+        {
+            case Direction.Up:
+                return (dir.y > 0f && Mathf.Abs(dir.x) <= dir.y * 2);
+            case Direction.Up | Direction.Left:
+                return (dir.y > 0f && dir.x < 0f);
+            case Direction.Left:
+                return (dir.x < 0f && Mathf.Abs(dir.y) * -2 >= dir.x);
+            case Direction.Down | Direction.Left:
+                return (dir.y < 0f && dir.x < 0f);
+            case Direction.Down:
+                return (dir.y < 0f && Mathf.Abs(dir.x) <= dir.y * -2);
+            case Direction.Down | Direction.Right:
+                return (dir.y < 0f && dir.x > 0f);
+            case Direction.Right:
+                return (dir.x > 0f && Mathf.Abs(dir.y) * 2 <= dir.x);
+            case Direction.Up | Direction.Right:
+                return (dir.y > 0f && dir.x > 0f);
+        }
+
+        return false;
+    }
+
     public static (float, float) DirectionToRange(this Direction direction)
     {
         switch (direction)

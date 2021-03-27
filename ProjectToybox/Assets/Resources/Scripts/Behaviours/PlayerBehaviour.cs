@@ -43,7 +43,6 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
 
         if (isSceneLoaded)
         {
-            ObjectPoolController.Self.DisposeAll("InteractableFX");
             ScreenUIController.Instance.ScreenFadeCall(new Color(0, 0, 0, 0), 1f);
             GlobalInputController.Instance.RestoreControl();
         }
@@ -388,7 +387,17 @@ public class PlayerBehaviour : MonoBehaviour, IFieldObject, ICharacterObject, IM
     public HitType HitType { get; set; }
     public void GetHit(DamageState state)
     {
+        if (_innerTimer < 1f) return;
         
+        CurrentHP -= state.Damage;
+            
+        var bar = ObjectPoolController.Self.Instantiate("UIBarFX", new PoolParameters(Position)) as UIBarFX;
+        bar.Initialize(transform, 0, CurrentHP / Stats.hpMax, 0.5f);
+
+        var tfx = ObjectPoolController.Self.Instantiate("DamageTextFX", new PoolParameters(Position)) as DamageTextFX;
+        tfx.Initialize(string.Format($"{state.Damage}"), false, 0.5f);
+
+        Utils.DamageRedPulse(_sr, 0.5f);
     }
 
     #endregion

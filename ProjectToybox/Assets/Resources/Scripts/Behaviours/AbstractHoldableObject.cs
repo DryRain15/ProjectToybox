@@ -145,7 +145,7 @@ namespace Proto.Behaviours
                 {
                     var state = new DamageState
                     {
-                        Damage = Holder.Stats.atk,
+                        Damage = Holder.Stats.atk + Stats.atk,
                         DamageType = 0,
                         Getter = tidmg.GameObject.GetComponent<ICharacterObject>(),
                         Sender = Holder,

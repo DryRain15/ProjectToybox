@@ -51,6 +51,7 @@ namespace Proto
 
         public IPooledObject Instantiate(PoolParameters param)
         {
+            var parent = param.Parent ? param.Parent : null;
             var obj = GetOrCreate();
             obj.Name = _name;
             obj.gameObject.SetActive(true);

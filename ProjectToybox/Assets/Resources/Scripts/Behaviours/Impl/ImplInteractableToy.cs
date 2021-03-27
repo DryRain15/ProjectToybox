@@ -25,6 +25,9 @@ namespace Proto.Behaviours.Impl
         protected override void OnInteract(ICharacterObject interacted)
         {
             InteractState = InteractState.OnAction;
+            var sb = ObjectPoolController.Self.Instantiate("SpeechBubbleFX",
+                new PoolParameters(transform.position + Vector3.up)) as SpeechBubbleFX;
+            sb.Initialize("Hello, this is test speech bubble. Nice to Meet you.", true, 1f, 3f);
         }
 
         #region IDamaged

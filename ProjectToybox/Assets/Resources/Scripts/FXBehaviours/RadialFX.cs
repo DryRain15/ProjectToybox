@@ -21,7 +21,7 @@ public class RadialFX : MonoBehaviour, IPooledObject
     public void Initialize(float from, float to, Color color, float scale = 1f, float subto = 0f)
     {
         transform.parent = FieldUIController.Instance.transform;
-        transform.localScale = Vector3.one * scale;
+        transform.localScale = Vector3.one * (scale * 2);
         startAngle.fillAmount = from;
         endAngle.fillAmount = to;
         subEndAngle.fillAmount = subto;
