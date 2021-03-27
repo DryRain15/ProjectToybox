@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4605002175151256639}
   - component: {fileID: 7717364520304242235}
   - component: {fileID: 8030759896800282382}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GoldBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5470084719170233636}
   - component: {fileID: 5470084719170233635}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GoldBarGFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}

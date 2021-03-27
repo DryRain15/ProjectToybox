@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4573939147006225522}
   - component: {fileID: 2000234973269520920}
   - component: {fileID: 4154593674616656660}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MoneyMunchi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4281698980543422998}
   - component: {fileID: 4281698980543422997}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}

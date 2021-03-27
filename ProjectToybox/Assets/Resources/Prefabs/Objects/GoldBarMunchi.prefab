@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5561560000562838975}
   - component: {fileID: 715905928278308774}
   - component: {fileID: 3099497983496195172}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GoldBarMunchi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8205773385442387903}
   - component: {fileID: 8205773385442387896}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}

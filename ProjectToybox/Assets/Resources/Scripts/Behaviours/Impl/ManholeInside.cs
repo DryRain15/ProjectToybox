@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Proto.Behaviours.Impl
 {
-    public class Manhole : AbstractInteractableObject
+    public class ManholeInside : AbstractInteractableObject
     {
         protected override void OnInteract(ICharacterObject interacted)
         {
